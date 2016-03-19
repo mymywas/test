@@ -4,12 +4,32 @@
         <meta charset="UTF-8">
         <title>Test by mymywas</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+        <style>
+            .abc{
+                color: #e74c3c; font-size: 25pt;
+            }
+            .tRow12Col1{
+                background-color: #27ae60; color: #2c3e50;
+            }
+            .tRow1Col2{
+                color:#2c3e50;
+            }
+            .tRow2Col2{
+                color: #2c3e50;
+            }
+            .tRow3Col1
+            {
+                background: #27ae60; color: #2c3e50;
+            }
+            .tRow3Col2{
+                color: #2c3e50;
+            }
+        </style>
     </head>
     <body BGCOLOR="#ecf0f1">
         <font color="#2980b9" size ="25">
         <h3>The summary of procedure</h3>
-        <font color="#e74c3c" size ="25">
-        <table border="1">
+        <table class="abc" border="1">
             <thead> 
                 <tr>
                     <th>sale_style</th>
@@ -18,18 +38,18 @@
             </thead>
             <tbody>
                 <tr> 
-                    <td BGCOLOR="#27ae60" rowspan="2"><font color="#2c3e50">3</td>
+                    <td class ="tRow12Col1" rowspan="2">3</td>
                     <!--<td BGCOLOR="#27ae60"><font color="#2c3e50">1</td>-->
-                    <td><font color="#2c3e50">2</td>                
+                    <td class ="tRow1Col2" >2</td>                
                 </tr>
                 <tr> 
                     <!--<td BGCOLOR="#27ae60"><font color="#2c3e50">3</td>-->
-                    <td><font color="#2c3e50">4</td>
+                    <td class ="tRow2Col2">4</td>
 
                 </tr>
                 <tr> 
-                    <td BGCOLOR="#27ae60"><font color="#2c3e50">5</td>
-                    <td><font color="#2c3e50">6</td>
+                    <td class ="tRow3Col1">5</td>
+                    <td class ="tRow3Col2">6</td>
                 </tr>
             </tbody>
         </table>
