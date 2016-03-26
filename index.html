@@ -1,138 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
+        <link href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
         <title>Test by mymywas</title>
-        <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
         <style>
-            .p1{
-                font-family: "Times New Roman";
-                color: white;
-                font-size: 300%;
-                font-weight: normal;
-                text-decoration: underline;
-                width: 20%;
-                margin-left: 11%;
-                padding: 0.5% 0.5%;
-                text-align: center;
-                
-            }  
-            .p2{
-                font-family: Georgia, "Times New Roman",
-                    Times, serif;
-                color: white;
-                font-size: 250%; 
-                font-weight: bold;
-                text-align: center;
-
-            }  
-            .p3{
-                font-weight: normal;
-                margin-top: 0%;
-                font-size: 250%;
-                text-align: center;
-            }
-            .p4{
-                font-family: Georgia, "Times New Roman",
-                    Times, serif;
-                color: white;
-                font-size: 450%;
-                font-weight: normal;
-                padding: 5% 1% 20% 1%;
-            }
-            .p5{
-                font-family: Georgia, "Times New Roman",
-                    Times, serif;
-                color: white;
-                font-size: 250%;
-                font-weight: normal;
-                margin-top: 0%;
-                padding: 1% 1% 4% 1%;
-
-            }
-            .d1{
-                margin: 0% 3% 2% 25%;
-                width: 50%;
-                text-align: center;
-            }
-
-            .d2{
-                padding-left: 7%;
-                margin: 3% 3% 3% 3%;
-                float: left;
-                width: 10%;
-                text-align: center;
-            }
-            .bigDiv{
-                min-width: 1200px;
-                min-height: 500px;
-            }
-            .hn1{
-                height: 120px;
-                box-sizing: border-box;
-                padding-top:2.3%;
-            }
-            .hn2{
-                height: 150px
-
-            }
             body{
-                margin: 70px 50px 50px 50px;
-                background: #F64646
+                background-image: url("./img/trianglify-background.svg");
             }
+            .logo{
+                text-align: center;
+                margin-top: 50px;
+            }
+            .titleText{
+                border: 1px #EAC0FE double;
+                border-radius: 20px;
+                width: 550px;   
+                text-align: center;
+                margin-left: 400px;
+            }
+            .confuse{
+                border: 1px #E4F494 double;
+                text-align: center;
+                color: white;
+                font-size: 50px;
+                width: 800px;
+                border-radius: 20px;
+                margin-left: 250px;
+                margin-top: 30px;
+            }
+            nhap{
+                background: none;
+            }
+            .input-group-addon{
+                border: none;
+                width: 300px;
+                text-align: center;
+            }
+
         </style>
+
     </head>
-    <body >
-        <div class="bigDiv">
-            <div class="hn1">
-                <div class="p1">
-                    <span>Mỹ Mỹ</span>
-                </div>
-            </div>
-            <div class="hn2">
-                <div class="d1">
-                    <div  class="p2">
-                        <span>Tôi đang làm một website</span>
-                    </div>
-                    <div class="p2 p3">
-                        <span >Hãy chờ tới ngày đó!!!</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="d2">
-                    <div class="p4">
-                        <span >99</span>
-                    </div>
-                    <div class="p5">
-                        <span >ngày</span>
-                    </div>
-                </div>
-                <div class="d2 gio">
-                    <div class="p4">
-                        <span>99</span>
-                    </div>
-                    <div class="p5">
-                        <span>giờ</span>
-                    </div>
-                </div>
-                <div class="d2">
-                    <div class="p4">
-                        <span>99</span>
-                    </div>
-                    <div class="p5">
-                        <span>phút</span>
-                    </div>
-                </div>
-                <div class="d2">
-                    <div class="p4">
-                        <span>99</span>
-                    </div>
-                    <div class="p5">
-                        <span>giây</span>
-                    </div>
-                </div>
-            </div>
+    <body>
+        <div class="logo">
+            <img src="./img/ToLOVE-Ru_Logo.svg"> 
         </div>
+        <div class="titleText">
+            Đây là một Website hỗ trợ các bạn tìm hiểu thêm thông tin về môn học
+        </div>
+        <div class="confuse">
+            What are you confusing???
+        </div>
+        <div>
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"></div>
+                        <input type="text" class="form-control" id="exampleInputAmount">
+                        <div class="input-group-addon"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </body>
 </html>
