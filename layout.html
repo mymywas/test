@@ -6,16 +6,17 @@
         <title>Test by mymywas</title>
         <style>
             body{
-                background-image: url("./img/trianglify-background.svg");
+                background-image: url("./img/cam.jpg");
                 min-height: 1200px;
                 min-width: 1200px;
                 background-attachment: fixed;
                 box-sizing: border-box;
+
             }
             .logo{
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top:70px;
+                margin-left: 100px;
+                position: fixed;
             }
             .titleText{
                 border: 1px #EAC0FE double;
@@ -38,32 +39,35 @@
             .confuse{
                 border: 1px #E4F494 double;
                 text-align: center;
-                color: #3A84CD;
+                color: #141726;
                 font-size: 39px;
-                width: 800px;
+                width: 600px;
                 border-radius: 20px;
-                margin-left: 279px;
-                margin-top: 30px;
+                margin-left: 530px;
+                margin-top: 140px;
                 font-family: myFirstFont;
+                float: right;                
+
+                position: fixed;
                 -webkit-transition: 0.3s ease-out 0.1s;
                 -moz-transition:  0.3s ease-out 0.1s;
                 -o-transition:  0.3s ease-out 0.1s;
                 transition: 0.3s ease-out 0.1s;
             }
             .confuse:hover{
-                color: #EC432C;
-                width: 650px;
+                color: #C63D69;
                 font-size: 45px;
-                margin-left: 345px;
 
             }
             .form-control{
                 background-color: rgba(0, 0, 0, 0);
-                margin-left: 420px;
-                margin-top: 45px;
+                margin-left: 610px;
+                margin-top: 220px;
                 text-align: center;
                 color: #DF2263;
                 font-size: 17px;
+                position: fixed;
+                width: 400px;
                 -webkit-transition: 0.3s ease-out 0.1s;
                 -moz-transition:  0.3s ease-out 0.1s;
                 -o-transition:  0.3s ease-out 0.1s;
@@ -76,16 +80,17 @@
                 width: 500px;  
             }
             .dataFake{
-                margin-top: 100px;
-                margin-left: 415px;
+                margin-top: 290px;
+                margin-left: 600px;
                 width: 470px;  
                 text-align: center;
-                color: #CB3F3B;
+                color: #483367;
                 font-size: 20px;
+                position: fixed;
             }
             .hinh{
-                width: 200px;
-                height: 164px;
+                width: 435px;
+                height: 300px;
             }
             .pass{
                 width: 450px;
@@ -118,52 +123,55 @@
                 src: url("./front/Choko.otf");
             }
             input::-webkit-input-placeholder {
-                color: red !important;
+                color: #3E4447 !important;
             }
 
             input::-moz-placeholder { /* Firefox 18- */
-                color: red !important;  
+                color: #3E4447 !important;  
             }
 
             input:-moz-placeholder {  /* Firefox 19+ */
-                color: red !important;  
+                color: #3E4447 !important;  
             }
 
             input:-ms-input-placeholder {  
-                color: red !important;  
+                color: #3E4447 !important;  
             }
         </style>
 
     </head>
     <body>
-        <div class="pass">
-            Cóc ALL PASS
+        <!--        <div class="pass">
+                    Cóc ALL PASS
+                </div>-->
+        <div class="confuse">
+            What are you confusing about?
         </div>
         <div class="logo">
             <img src="./img/frog.png" class="hinh"> 
         </div>
-        <div class="titleText">
-            Đây là một Website hỗ trợ các bạn tìm hiểu thêm thông tin về môn học
-        </div>
-        <div class="confuse">
-            What are you confusing about?
-        </div>
         <div>
-            <div class="col-sm-10">
-                <input class="form-control" type="text" id="lg" placeholder="tên môn học, mã môn, tên giáo viên, lớp,..">
-            </div>
-        </div>
-        <div class="dataFake">
+            <!--            <div class="titleText">
+                            Đây là một Website hỗ trợ các bạn tìm hiểu thêm thông tin về môn học
+                        </div>-->
+
             <div>
-                Khánh Kute
-                <br>
-                I2SE
-                <br>
-                PRJ231
-                <br>
-                Advance Java
-                <br>
-                SE0970
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="lg" placeholder="tên môn học, mã môn, tên giáo viên, lớp,..">
+                </div>
+            </div>
+            <div class="dataFake">
+                <div>
+                    Khánh Kute
+                    <br>
+                    I2SE
+                    <br>
+                    PRJ231
+                    <br>
+                    Advance Java
+                    <br>
+                    SE0970
+                </div>
             </div>
         </div>
     </body>
