@@ -9,7 +9,8 @@
                 background-image: url("./img/trianglify-background.svg");
                 min-height: 1200px;
                 min-width: 1200px;
-                 background-attachment: fixed;
+                background-attachment: fixed;
+                box-sizing: border-box;
             }
             .logo{
                 text-align: center;
@@ -23,7 +24,6 @@
                 text-align: center;
                 margin-left: 400px;
                 color: #e67e22;
-                
                 -webkit-transition: 0.3s ease-out 0.1s;
                 -moz-transition:  0.3s ease-out 0.1s;
                 -o-transition:  0.3s ease-out 0.1s;
@@ -37,20 +37,21 @@
             .confuse{
                 border: 1px #E4F494 double;
                 text-align: center;
-                color: #C56571;
-                font-size: 50px;
+                color: #3A84CD;
+                font-size: 39px;
                 width: 800px;
                 border-radius: 20px;
                 margin-left: 250px;
                 margin-top: 30px;
-                 -webkit-transition: 0.3s ease-out 0.1s;
+                font-family: myFirstFont;
+                -webkit-transition: 0.3s ease-out 0.1s;
                 -moz-transition:  0.3s ease-out 0.1s;
                 -o-transition:  0.3s ease-out 0.1s;
                 transition: 0.3s ease-out 0.1s;
             }
             .confuse:hover{
                 color: #EC432C;
-                
+
             }
             .form-control{
                 background-color: rgba(0, 0, 0, 0);
@@ -58,7 +59,7 @@
                 margin-top: 35px;
                 text-align: center;
                 color: #DF2263;
-                 -webkit-transition: 0.3s ease-out 0.1s;
+                -webkit-transition: 0.3s ease-out 0.1s;
                 -moz-transition:  0.3s ease-out 0.1s;
                 -o-transition:  0.3s ease-out 0.1s;
                 transition: 0.3s ease-out 0.1s;
@@ -74,7 +75,7 @@
                 margin-left: 415px;
                 width: 470px;  
                 text-align: center;
-                color: #FF375D;
+                color: #FF0000;
                 font-size: 20px;
             }
             .hinh{
@@ -82,15 +83,17 @@
                 height: 164px;
             }
             .pass{
-                width: 250px;
+                width: 450px;
                 border: 5px #DBE9F3 double;
                 text-align: center;
-                color: #FF9F52;
-                font-size: 30px;
+                color: #D94343;
+                font-size: 50px;
                 border-radius: 3px;
-                margin-left: 546.4px;
+                margin-left: 450px;
                 margin-top: 10px;
-                 -webkit-transition: 0.3s ease-out 0.1s;
+                padding-bottom: 11px;
+                font-family: my2Font;
+                -webkit-transition: 0.3s ease-out 0.1s;
                 -moz-transition:  0.3s ease-out 0.1s;
                 -o-transition:  0.3s ease-out 0.1s;
                 transition: 0.3s ease-out 0.1s;
@@ -98,8 +101,16 @@
             .pass:hover{
                 color:  #E0514B;
                 width: 400px;
-                font-size: 40px;
+                font-size: 60px;
                 margin-left: 472px;
+            }
+            @font-face {
+                font-family: myFirstFont;
+                src: url("./front/QuinchoScript_PersonalUse.ttf");
+            }
+            @font-face {
+                font-family: my2Font;
+                src: url("./front/Choko.otf");
             }
         </style>
 
@@ -115,7 +126,7 @@
             Đây là một Website hỗ trợ các bạn tìm hiểu thêm thông tin về môn học
         </div>
         <div class="confuse">
-            What are you confusing???
+            What are you confusing about?
         </div>
         <div>
             <div class="col-sm-10">
