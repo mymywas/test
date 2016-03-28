@@ -59,7 +59,7 @@
             }
             .form-control{
                 background-color: rgba(0, 0, 0, 0);
-                margin-left: 400px;
+                margin-left: 420px;
                 margin-top: 45px;
                 text-align: center;
                 color: #DF2263;
@@ -116,6 +116,21 @@
             @font-face {
                 font-family: my2Font;
                 src: url("./front/Choko.otf");
+            }
+            input::-webkit-input-placeholder {
+                color: red !important;
+            }
+
+            input::-moz-placeholder { /* Firefox 18- */
+                color: red !important;  
+            }
+
+            input:-moz-placeholder {  /* Firefox 19+ */
+                color: red !important;  
+            }
+
+            input:-ms-input-placeholder {  
+                color: red !important;  
             }
         </style>
 
