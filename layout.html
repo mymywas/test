@@ -49,25 +49,23 @@
                 float: right;                
 
                 position: fixed;
-                /*                -webkit-transition: 0.3s ease-out 0.1s;
-                                -moz-transition:  0.3s ease-out 0.1s;
-                                -o-transition:  0.3s ease-out 0.1s;
-                                transition: 0.3s ease-out 0.1s;*/
+                -webkit-transition: 0.3s ease-out 0.1s;
+                -moz-transition:  0.3s ease-out 0.1s;
+                -o-transition:  0.3s ease-out 0.1s;
+                transition: 0.3s ease-out 0.1s;
             }
-            /*            .confuse:hover{
-                            color: #5DCAF2;
-                            font-size: 48px;
-                            margin-bottom: 100px;
-                        }*/
+            .confuse:hover{
+                color: #5DCAF2;
+                font-size: 48px;
+                margin-bottom: 100px;
+            }
             .form-control{
                 background-color: rgba(0, 0, 0, 0);
-                margin-left: 680px;
-                margin-top: 220px;
-                text-align: center;
+
+                text-align: left;
                 color: #193441;
-                font-size: 18.5px;
+                font-size: 15px;
                 position: fixed;
-                width: 400px;
                 -webkit-transition: 0.3s ease-out 0.1s;
                 -moz-transition:  0.3s ease-out 0.1s;
                 -o-transition:  0.3s ease-out 0.1s;
@@ -182,6 +180,16 @@
                 margin-top: 172px;
                 margin-left: 539px;
             }
+            .khungnhap{
+                margin-top: 220px;
+                margin-left: 710px;
+                width: 700px;
+                position: fixed;
+                background-color: rgba(0, 0, 0, 0);
+            }
+            .btn.btn-default{
+                 background-color: rgba(0, 0, 0, 0);
+            }
         </style>
 
     </head>
@@ -195,7 +203,7 @@
             <div class="otron so3"></div>
             <div class="otron so4"></div>
             <div class="otron so5"></div>
-             <div class="otron so6"></div>
+            <div class="otron so6"></div>
         </div>
         <div class="confuse">
             What are you confusing about?
@@ -204,29 +212,33 @@
         <div class="logo">
             <img src="./img/frog.png" class="hinh"> 
         </div>
-        <div>
+        <div class="khungnhap">
             <!--            <div class="titleText">
                             Đây là một Website hỗ trợ các bạn tìm hiểu thêm thông tin về môn học
                         </div>-->
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
 
+        <div class="dataFake">
             <div>
-                <div class="col-sm-10">
-                    <input class="form-control" type="text" id="lg" placeholder="tên môn học, mã môn, tên giáo viên, lớp,..">
-                </div>
-            </div>
-            <div class="dataFake">
-                <div>
-                    Khánh Kute
-                    <br>
-                    I2SE
-                    <br>
-                    PRJ231
-                    <br>
-                    Advance Java
-                    <br>
-                    SE0970
-                </div>
+                Khánh Kute
+                <br>
+                I2SE
+                <br>
+                PRJ231
+                <br>
+                Advance Java
+                <br>
+                SE0970
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
