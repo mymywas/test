@@ -6,7 +6,7 @@
         <title>Test by mymywas</title>
         <style>
             body{
-                background: #384959;
+                background: #934d1c;
                 min-height: 1200px;
                 min-width: 1200px;
                 background-attachment: fixed;
@@ -49,16 +49,16 @@
                 float: right;                
 
                 position: fixed;
-                -webkit-transition: 0.3s ease-out 0.1s;
-                -moz-transition:  0.3s ease-out 0.1s;
-                -o-transition:  0.3s ease-out 0.1s;
-                transition: 0.3s ease-out 0.1s;
+                /*                -webkit-transition: 0.3s ease-out 0.1s;
+                                -moz-transition:  0.3s ease-out 0.1s;
+                                -o-transition:  0.3s ease-out 0.1s;
+                                transition: 0.3s ease-out 0.1s;*/
             }
-            .confuse:hover{
-                color: #5DCAF2;
-                font-size: 48px;
-                margin-bottom: 100px;
-            }
+            /*            .confuse:hover{
+                            color: #5DCAF2;
+                            font-size: 48px;
+                            margin-bottom: 100px;
+                        }*/
             .form-control{
                 background-color: rgba(0, 0, 0, 0);
                 margin-left: 680px;
@@ -84,7 +84,7 @@
                 margin-left: 670px;
                 width: 470px;  
                 text-align: center;
-                color: #83F5E2;
+                color: #262114;
                 font-size: 25px;
                 position: fixed;
                 font-family: my3Font;
@@ -124,7 +124,7 @@
                 font-family: my2Font;
                 src: url("./front/Choko.otf");
             }
-             @font-face {
+            @font-face {
                 font-family: my3Font;
                 src: url("./front/victoria-serif.ttf");
             }
@@ -143,42 +143,90 @@
             input:-ms-input-placeholder {  
                 color: #C2E0F2 !important;  
             }
+            .otron{
+                border: 2px #E4F494 double;
+                width:10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-top: 280px;
+                margin-left: 420px;
+                position: fixed;
+            }
+            .otron.so2{
+                width:15px;
+                height: 15px;
+                margin-top: 263px;
+                margin-left: 431px;
+            }
+            .otron.so3{
+                width:20px;
+                height: 20px;
+                margin-top: 239px;
+                margin-left: 447px;
+            }
+            .otron.so4{
+                width:25px;
+                height: 25px;
+                margin-top: 210px;
+                margin-left: 467px;
+            }
+            .otron.so5{
+                width:30px;
+                height: 30px;
+                margin-top: 185px;
+                margin-left: 498px;
+            }
+            .otron.so6{
+                width:32px;
+                height: 32px;
+                margin-top: 172px;
+                margin-left: 539px;
+            }
         </style>
 
     </head>
     <body>
-            <!--        <div class="pass">
-                        Cóc ALL PASS
-                    </div>-->
-            <div class="confuse">
-                What are you confusing about?
-            </div>
-            <div class="logo">
-                <img src="./img/frog.png" class="hinh"> 
-            </div>
-            <div>
-                <!--            <div class="titleText">
-                                Đây là một Website hỗ trợ các bạn tìm hiểu thêm thông tin về môn học
-                            </div>-->
+        <!--        <div class="pass">
+                    Cóc ALL PASS
+                </div>-->
+        <div >
+            <div class="otron"></div>
+            <div class=" otron so2"></div>
+            <div class="otron so3"></div>
+            <div class="otron so4"></div>
+            <div class="otron so5"></div>
+             <div class="otron so6"></div>
+        </div>
+        <div class="confuse">
+            What are you confusing about?
+        </div>
 
-                <div>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" id="lg" placeholder="tên môn học, mã môn, tên giáo viên, lớp,..">
-                    </div>
-                </div>
-                <div class="dataFake">
-                    <div>
-                        Khánh Kute
-                        <br>
-                        I2SE
-                        <br>
-                        PRJ231
-                        <br>
-                        Advance Java
-                        <br>
-                        SE0970
-                    </div>
+        <div class="logo">
+            <img src="./img/frog.png" class="hinh"> 
+        </div>
+        <div>
+            <!--            <div class="titleText">
+                            Đây là một Website hỗ trợ các bạn tìm hiểu thêm thông tin về môn học
+                        </div>-->
+
+            <div>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="lg" placeholder="tên môn học, mã môn, tên giáo viên, lớp,..">
                 </div>
             </div>
+            <div class="dataFake">
+                <div>
+                    Khánh Kute
+                    <br>
+                    I2SE
+                    <br>
+                    PRJ231
+                    <br>
+                    Advance Java
+                    <br>
+                    SE0970
+                </div>
+            </div>
+        </div>
     </body>
 </html>
