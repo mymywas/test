@@ -17,11 +17,10 @@
             }
             .header{
                 height: 50px;
-                width: 1500px;
                 background:  black;
                 color: white;
                 padding-bottom: 11px;
-
+                box-sizing: border-box;
             }
             .hungpizza{
                 margin-left: 30px;
@@ -40,20 +39,21 @@
             }
             .animation{
                 background: #CD2027;
-                height: 50px; 
-                width: 1500px;
-                /*                margin-top: 61px;*/
+                height: 50px;
                 box-sizing: border-box;
-                /*                padding-top: 7px;*/
                 font-size: 30px;
+                border: 1px #660000 double;
+            }
+            .chua{
+                width: 300px;
                 box-sizing: border-box;
-
+                float: left;
             }
             .button{
-                margin-left: 390px;
-                /*                margin-top: 13px;*/
+                margin-left: 180px;
                 box-sizing: border-box;
                 border-bottom: 1px white double;
+                float: left;
             }
             .button1{
                 background-color: rgba(0,0,0,0);
@@ -66,7 +66,9 @@
                 border-radius: 5px;
             }
             .hotline{
-                margin-left: 350px; 
+                margin-left: 280px; 
+                float: left;
+                margin-top: 7px;
             }
             .sdt{
                 border: 1px #EDA90E double; 
@@ -110,14 +112,7 @@
                 padding-left: 100px;
                 float: left;
             }
-            /*            .pizzachoice.b{
-                            padding-left: 100px;
-                            float: left;
-                        }
-                        .pizzachoice.c{
-                            padding-left: 200px;
-                            float: left;
-                        }*/
+
             .xedich{
                 margin-left: 180px;
                 margin-top: 50px;
@@ -142,7 +137,18 @@
             }
             .anhdong{
                 width: 80px;
+                animation-name: chuyennhanh;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
             }
+            @keyframes chuyennhanh {
+                0%   {margin-left:0px;}
+              
+                50%  {margin-left:200px;}
+               
+                100% {margin-left:0px;}
+            }
+
         </style>
     </head>
     <body>
@@ -162,15 +168,18 @@
                 </div>
             </div>
             <div class="animation">
-                <img class="anhdong" src="./img/bmphut_en.png">
-                <span class="button">
+                <div class="chua">
+                    <img class="anhdong" src="./img/bmphut_en.png">
+                </div>
+                <div class="button">
                     <button class="button1">limited time offer</button>
                     <button class="button1 a">alacarte</button>
-                </span>
-                <span class="hotline">
+                </div>
+                <div class="hotline">
                     <span class="sdt">08(3)9999999</span>
                     <span class="sdt odernow">ORDER NOW</span>
-                </span>
+                </div>
+
             </div>
             <div class="xedich">
                 <div class="pizzachoice">
