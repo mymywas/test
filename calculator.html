@@ -14,16 +14,6 @@
                 padding-left: 16px;
                 box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4), 0px 6px 20px 0px rgba(0, 0, 0, 0.9);
             }
-            .form-control{
-                width: 223px;
-                height: 60px;
-                border: 1px #059FF5 double;
-                box-sizing: border-box;
-                font-weight: bold;
-                font-size: 30px;
-                padding-left: 5px;
-                float: left;
-            }
             button{
                 background: rgba(0,0,0,0);
                 width: 71.8px;
@@ -34,15 +24,35 @@
                 font-size: 30px;
                 border-color: #059FF5;
                 border-width: 0.5px;
+                transition: 0s;
+            }
+            button:hover{
+                color: yellow;
+            }
+            button:focus{
+                color: chartreuse;
             }
             .btnBang{
                 width: 147.5px;
+            }
+            .output{
+                width: 223px;
+                height: 60px;
+                border: 1px #059FF5 double;
+                box-sizing: border-box;
+                font-weight: bold;
+                font-size: 30px;
+                padding-left: 5px;
+                float: left;
+            }
+            .btnXoa{
+                color: red;
             }
         </style>
     </head>
     <body>
         <div>
-            <input type="text" class="form-control" value="0">
+            <div class="output">0</div>
             <div>
                 <button>1</button>
                 <button>2</button>
@@ -70,7 +80,7 @@
             </div>
             <div>
                 <button class="btnBang">=</button>
-                <button>+</button>
+                <button class="btnXoa">C</button>
             </div>
         </div>
     </body>
