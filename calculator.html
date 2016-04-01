@@ -24,15 +24,17 @@
                 font-size: 30px;
                 border-color: #059FF5;
                 border-width: 0.5px;
-                transition: 0.3s ease-out 0.3s;
+                transition: all 0.1s ease-out 0.1s;
             }
             button:hover{
                 background: #38B248;
                 color: brown;
+                cursor: pointer;
             }
             button:focus{
                 background: #046FB4;
                 color: white;
+                cursor: pointer;
             }
             .btnBang{
                 width: 147.5px;
@@ -48,7 +50,22 @@
                 float: left;
             }
             .btnXoa{
-                color: red;
+                background:  #FF254A;
+                color: white;
+                transition: all 0.1s ease-out 0.1s;
+            }
+            .btnXoa:hover{
+                background: #DC2232;
+                color: white;
+                cursor: pointer;
+            }
+            .btnXoa:focus{
+                background: #046FB4;
+                color: white;
+                cursor: pointer;
+            }
+            .tinh{
+                background: #47BC87;
             }
         </style>
     </head>
@@ -73,12 +90,12 @@
             <div>
                 <button>0</button>
                 <button>.</button>
-                <button>+</button>
+                <button class="tinh">+</button>
             </div>
             <div>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
+                <button class="tinh">-</button>
+                <button class="tinh">*</button>
+                <button class="tinh">/</button>
             </div>
             <div>
                 <button class="btnBang">=</button>
