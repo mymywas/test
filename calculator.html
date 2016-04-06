@@ -67,29 +67,45 @@
                 color: white;
             }
         </style>
+        <script>
+
+            function nhangiatri(x) {
+                var receive = x;
+                var temp = "";
+                while (receive !== "=")
+                {
+                    temp = temp + x;
+                }
+                alert(temp);
+                jQuery.ready();
+            }
+            function myFunction() {
+                alert("call on body load");
+            }
+        </script>
     </head>
     <body>
         <div>
             <div class="output">0</div>
             <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+                <button onclick="nhangiatri('1')">1</button>
+                <button onclick="nhangiatri('2')">2</button>
+                <button onclick="nhangiatri('3')">3</button>
             </div>
             <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
+                <button onclick="nhangiatri('4')">4</button>
+                <button onclick="nhangiatri('5')">5</button>
+                <button onclick="nhangiatri('6')">6</button>
             </div>
             <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button onclick="nhangiatri('7')">7</button>
+                <button onclick="nhangiatri('8')">8</button>
+                <button onclick="nhangiatri('9')">9</button>
             </div>
             <div>
-                <button>0</button>
+                <button onclick="nhangiatri('0')">0</button>
                 <button>.</button>
-                <button class="tinh">+</button>
+                <button class="tinh" onclick="nhangiatri('+')">+</button>
             </div>
             <div>
                 <button class="tinh">-</button>
