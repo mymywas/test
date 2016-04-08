@@ -46,11 +46,11 @@
                 width: 223px;
                 height: 60px;
                 border: 1px #059FF5 double;
-                box-sizing: border-box;
                 font-weight: bold;
-                font-size: 30px;
+                font-size: 25px;
                 padding-left: 5px;
                 float: left;
+                box-sizing: border-box;
             }
             .btnXoa{
                 background:  #FF254A;
@@ -66,12 +66,19 @@
                 background: #47BC87;
                 color: white;
             }
+            .ketqua{
+                float: right;
+            }
         </style>
-        
+
     </head>
     <body>
         <div>
-            <div class="output" onload="print()">0</div>
+            <div class="output" >
+                <div id="Output">0</div>
+                <div class="ketqua" id="ketqua">0</div>
+            </div>
+
             <div>
                 <button onclick="nhangiatri('1')">1</button>
                 <button onclick="nhangiatri('2')">2</button>
@@ -89,13 +96,13 @@
             </div>
             <div>
                 <button onclick="nhangiatri('0')">0</button>
-                <button>.</button>
+                <button onclick="nhangiatri('.')">.</button>
                 <button class="tinh" onclick="nhangiatri('+')">+</button>
             </div>
             <div>
-                <button class="tinh" onmouseup="">-</button>
-                <button class="tinh">*</button>
-                <button class="tinh">/</button>
+                <button class="tinh" onclick="nhangiatri('-')">-</button>
+                <button class="tinh" onclick="nhangiatri('*')">*</button>
+                <button class="tinh" onclick="nhangiatri('/')">/</button>
             </div>
             <div>
                 <button class="btnBang" onclick="nhangiatri('=')">=</button>
@@ -105,22 +112,37 @@
     </body>
 </html>
 <script>
-            var temp="";
-            function nhangiatri(x) {
-                var receive = x;
-                if(receive!=="=")
-                {
-                    temp=temp+x;
-                }
-                else{
-                    alert(temp);
-                }
-            }
-            function cong(){
-                var res = temp.split("+");
-                
-            }
-            function xoa(){
-                temp="";
-            }
-        </script>
+    var input = "";
+    var result = 0.0;
+    function nhangiatri(x) {
+
+        if (x === "=") {
+            result = tinhtoan();
+            xuatketqa(result);
+        }
+        else {
+            input += x;
+            hienthi(input);
+        }
+    }
+    function tinhtoan() {
+        return new Function('return ' + input)();
+    }
+    function xoa() {
+        input = "";
+        document.getElementById("Output").innerHTML = input;
+        result = 0;
+        document.getElementById("ketqua").innerHTML = result;
+    }
+    function hienthi(y) {
+        var hienthi = "";
+        hienthi = hienthi + y;
+        document.getElementById("Output").innerHTML = hienthi;
+    }
+    function xuatketqa(z) {
+        var ketqua = 0.0;
+        ketqua = z;
+        document.getElementById("ketqua").innerHTML = ketqua;
+
+    }
+</script>
