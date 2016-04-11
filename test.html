@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test by mymywas</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="./lib/Swiper-master/dist/css/swiper.min.css">
+        <style>
+            body{
+                width: 75%;
+                margin-left: 13%;
+            }
+            .header{
+                height: 50px;
+                border: 3px #72610E solid ;
+                width: 15%;
+                font-size:  200%;
+                color: #72610E;
+                text-align: center;
+                float: left;
+                margin: 1%;
+                margin-left: 3%;
+            }
+            .line1{
+                height: 70px;
+                width: 100%;
+                background: #FBE1C2;
+                box-sizing: border-box;
+            }
+            .home.trangchu{
+                float: left;
+                padding-left: 7.7%;
+            }
+            .home{
+                font-size: 140%;
+                color: #72610E;
+                padding-top: 0.8%;
+            }
+            .col-lg-3.search{
+                margin-left: 70%;
+                margin-top: 0.7%;
+                margin-bottom: 1.6%;
+            }
+            .form-control{
+                background: #72610E;
+                border:none;
+            }
+            .phongan{
+                width: 40%;
+                height: 300px;
+            }
+            p{
+                text-align: center;
+            }
+            .col-lg-6.chu{
+                height: 338px;
+                padding-top: 5%;
+            }
+            .place{
+                color:#72610E;
+                font-size: 200%;
+            }
+            img{
+                width: 100%;
+                height: 338px;
+            }
+            .swiper-container {
+                width: 100%;
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .swiper-slide {
+                background-size: cover;
+                background-position: center;
+            }
+            .gallery-top {
+                height: 400px;
+                width: 100%;
+            }
+            .gallery-thumbs {
+                height: 150px;
+                box-sizing: border-box;
+                padding: 10px 0;
+            }
+            .gallery-thumbs .swiper-slide {
+                width: 25%;
+                height: 100%;
+                opacity: 0.4;
+            }
+            .gallery-thumbs .swiper-slide-active {
+                opacity: 1;
+            }
+            html, body {
+                position: relative;
+                height: 100%;
+            }
+            .nho{
+                height: 50px;
+                width: 50%;
+            }
+            .container-fluid.cuoi{
+                background: #72610E;
+                color: white;
+                text-align: center;
+            }
+            .than{
+                background: #E2CCA8;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="than">
+            <div class="header">Dream</div>
+            <div class="home ">
+                <div class="home trangchu">Trang Chủ</div>
+                <div class="home trangchu">Tiêu biểu</div>
+                <div class="home trangchu">Liên hệ</div>
+                <div class="home trangchu">Tuyển dụng</div>
+            </div>
+        <div>
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./img/phong_1.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_2.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_4.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_5.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/bed_1.jpg)"></div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./img/phong_1.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_2.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_4.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/phong_5.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/bed_1.jpg)"></div>
+                </div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="./lib/Swiper-master/dist/js/swiper.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var galleryTop = new Swiper('.gallery-top', {
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    spaceBetween: 10
+                });
+                var galleryThumbs = new Swiper('.gallery-thumbs', {
+                    spaceBetween: 10,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    touchRatio: 0.2,
+                    slideToClickedSlide: true
+                });
+                galleryTop.params.control = galleryThumbs;
+                galleryThumbs.params.control = galleryTop;
+
+            </script>
+        </div>
+
+        <div class="container-fluid">
+            <div class="col-xs-9 col-lg-3 search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-5 col-lg-6 chu">
+                    <p class="place">PHÒNG ĂN</p>
+                    <p>Nội thật phòng ăn cùng với phong cách tao nhã tạo cảm giác ấm cúng và nhẹ nhàng.</p>
+                    <p>Chất liệu: gỗ, vải.</p>
+                    <p>Hoa văn: sọc.</p>
+                    <p>Màu sắc: xanh.</p>
+                </div>
+                <div  class="col-xs-5 col-lg-6">
+                    <img src="./img/phong.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div  class="col-xs-6 col-lg-6">
+                    <img src="./img/phong.jpg">
+                </div>
+                <div class="col-xs-6 col-lg-6 chu">
+                    <p class="place">PHÒNG ĂN</p>
+                    <p>Nội thật phòng ăn cùng với phong cách tao nhã tạo cảm giác ấm cúng và nhẹ nhàng.</p>
+                    <p>Chất liệu: gỗ, vải.</p>
+                    <p>Hoa văn: sọc.</p>
+                    <p>Màu sắc: xanh.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-lg-6 chu">
+                    <p class="place">PHÒNG ĂN</p>
+                    <p>Nội thật phòng ăn cùng với phong cách tao nhã tạo cảm giác ấm cúng và nhẹ nhàng.</p>
+                    <p>Chất liệu: gỗ, vải.</p>
+                    <p>Hoa văn: sọc.</p>
+                    <p>Màu sắc: xanh.</p>
+                </div>
+                <div  class="col-xs-6 col-lg-6">
+                    <img src="./img/phong.jpg">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="nho" src="./img/ghe_1.png">
+                    </div>
+                    <div  class="swiper-slide">
+                        <img class="nho"  src="./img/light_icon.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="nho"  src="./img/rem_cua.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="nho"  src="./img/table_icon.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="nho"  src="./img/tu_quan_ao.png">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <!--                    <div class="swiper-button-next swiper-button-white"></div>
+                                    <div class="swiper-button-prev swiper-button-white"></div>-->
+            </div>
+            <!-- Swiper JS -->
+            <script src="./lib/Swiper-master/dist/js/swiper.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var galleryThumbs = new Swiper('.gallery-thumbs', {
+                    spaceBetween: 10,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    touchRatio: 0.2,
+                    slideToClickedSlide: true
+                });
+            </script>
+        </div>
+        <div class="container-fluid cuoi">
+            <div class="row">
+                <div class="col-xs-4 col-lg-4">
+                    <p>Tòa nhà IDD2</p>
+                    <p>Tòa nhà IDD2</p>
+                    <p>Tòa nhà IDD2</p>
+                </div>
+                <div class="col-xs-4 col-lg-4">
+                    <p>Gmail: Infor@dream.vn</p>
+                    <p>Gmail: Infor@dream.vn</p>
+                </div>
+                <div class="col-xs-4 col-lg-4">
+                    <p>Gmail: Infor@dream.vn</p>
+                    <p>Gmail: Infor@dream.vn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
