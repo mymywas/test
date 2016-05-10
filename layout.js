@@ -58,6 +58,46 @@ if (typeof (Storage) !== "undefined") {
                    "EngName": "Advanced Mathematics For Business",
                    "VietName": "Toán doanh nghiệp"
                },
+                {
+                    "code": "MAD111",
+                    "EngName": "Discrete Mathematics 1",
+                    "VietName": "Toán rời rạc 1"
+                },
+                 {
+                     "code": "MAA101",
+                     "EngName": "Discrete Mathematics 2",
+                     "VietName": "Toán rời rạc 2"
+                 },
+                  {
+                      "code": "MAC102",
+                      "EngName": "Advanced Mathematics For Business",
+                      "VietName": "Toán doanh nghiệp cao cấp"
+                  },
+                  {
+                      "code": "MAS291",
+                      "EngName": "Probability and Statistics",
+                      "VietName": "Xác suất thống kê"
+                  },
+                   {
+                       "code": "PRJ311",
+                       "EngName": "Desktop Java Applications",
+                       "VietName": "Java desktop"
+                   },
+                   {
+                       "code": "PRJ321",
+                       "EngName": "Web-based Java Applications",
+                       "VietName": "Java web"
+                   },
+                    {
+                        "code": "PRO192",
+                        "EngName": "Object-Oriented Paradigm using Java",
+                        "VietName": "Lập trình hướng đối tượng với Java"
+                    },
+                    {
+                        "code": "Phạm Hương Giang",
+                        "EngName": "ngáo ngáo",
+                        "VietName": "Xử nữ"
+                    },
         ]
     };
 }
