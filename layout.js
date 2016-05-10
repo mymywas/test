@@ -96,8 +96,23 @@ if (typeof (Storage) !== "undefined") {
                     {
                         "code": "Phạm Hương Giang",
                         "EngName": "ngáo ngáo",
-                        "VietName": "Xử nữ"
+                        "VietName": "thương Giang"
                     },
+                    {
+                        "code": " DBI202",
+                        "EngName": "Database Systems",
+                        "VietName": "Cơ sở dữ liệu"
+                    },
+                     {
+                         "code": " PRO201",
+                         "EngName": "Front-end web development",
+                         "VietName": "lập trình front-end với website"
+                     },
+                      {
+                          "code": " PRO001",
+                          "EngName": "Alice ",
+                          "VietName": "Alice "
+                      },
         ]
     };
 }
