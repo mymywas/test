@@ -1,0 +1,209 @@
+
+@font-face {
+    font-family: iCiel Altus Serif;
+    src: url("../front/iCiel Altus Serif.ttf");
+}
+
+@font-face {
+    font-family: Pony;
+    src: url("../front/Pony.ttf");
+}
+
+@font-face {
+    font-family: Nabila;
+    src: url("../front/Nabila.ttf");
+}
+
+@font-face {
+    font-family: Choko;
+    src: url("../front/Choko.otf");
+}
+
+@font-face {
+    font-family: iCiel Pacifico;
+    src: url("../front/iCiel Pacifico.ttf");
+}
+@font-face {
+    font-family: iCiel Simplifica;
+    src: url("../front/iCiel Simplifica.ttf");
+}
+
+@font-face {
+    font-family: iCiel Rukola;
+    src: url("../front/iCiel Rukola.ttf");
+}
+@font-face {
+    font-family: iCiel Altus;
+    src: url("../front/iCiel Altus.ttf");
+}
+
+/*search*/
+.search-form .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+    .search-form .form-group input.form-control {
+        padding-right: 20px;
+        border: 0 none;
+        background: transparent;
+        box-shadow: none;
+        display: block;
+    }
+
+        .search-form .form-group input.form-control::-webkit-input-placeholder {
+            display: none;
+        }
+
+        .search-form .form-group input.form-control:-moz-placeholder {
+            /* Firefox 18- */
+            display: none;
+        }
+
+        .search-form .form-group input.form-control::-moz-placeholder {
+            /* Firefox 19+ */
+            display: none;
+        }
+
+        .search-form .form-group input.form-control:-ms-input-placeholder {
+            display: none;
+        }
+
+    .search-form .form-group:hover,
+    .search-form .form-group.hover {
+        width: 100%;
+        border-radius: 4px 25px 25px 4px;
+    }
+
+    .search-form .form-group span.form-control-feedback {
+        position: absolute;
+        top: -1px;
+        right: -2px;
+        z-index: 2;
+        display: block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        color: #3596e0;
+        left: initial;
+        font-size: 14px;
+    }
+
+.search {
+    margin-top: 12px;
+}
+
+body {
+    background-image: url("../img/IMG_4723.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+IMG.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: auto;
+}
+
+.webName {
+    font-family: Pony;
+    text-align: center;
+    font-size: 200%;
+}
+
+.quote {
+    font-family: iCiel Altus Serif;
+    text-align: center;
+    font-size: 150%;
+}
+
+.icon {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+
+.myRoad {
+    border: 1px solid white;
+}
+
+.YourLove {
+    font-family: Nabila;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.see {
+    float: right;
+}
+
+.detail {
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.mien {
+    box-sizing: border-box;
+   
+}
+
+.region {
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    color: #4981B1;
+    font-family: iCiel Pacifico;
+    margin-top: 5px;
+    font-size: 150%;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.regionContent {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #4981B1;
+    box-sizing: border-box;
+    margin-top: 5px;
+     padding-left: 10px;
+    padding-right: 10px;
+}
+.content{
+    font-family: iCiel Simplifica;
+}
+.avatar {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.TitleContent {
+    font-weight: 900;
+    font-family: iCiel Rukola;
+    font-size: 160%;
+    margin-top: 16px;
+}
+
+.readMore {
+    font-size: 50%;
+}
+
+.myFooter {
+    background: red;
+}
+
+.footer {
+    background-color: #305589;
+    color: #A6C1E8;
+    margin-top: 5px;
+}
