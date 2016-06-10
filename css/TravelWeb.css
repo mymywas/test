@@ -2,7 +2,7 @@ body, a {
     color: white;
 }
 
-a:hover {
+a:focus, a:hover {
     color: #00a59a;
 }
 
