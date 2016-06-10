@@ -50,7 +50,7 @@ a:focus, a:hover,a:active {
     font-family: Nabila;
     border: 5px solid white;
     font-size: 240%;
-    padding: 29px;
+    padding: 13px;
     text-align: center;
 }
 
@@ -110,7 +110,7 @@ a:focus, a:hover,a:active {
 }
 
 .connectToSocial img {
-    width: 50%;
+    width: 20%;
 }
 
 .myQuote {
@@ -118,6 +118,7 @@ a:focus, a:hover,a:active {
     font-family: Nabila;
     font-size: 500%;
     padding: 15px;
+    text-align: left;
 }
 
 .titleHead {
@@ -261,13 +262,12 @@ a:focus, a:hover,a:active {
     display: block;
     vertical-align: bottom;
     background-color: #305589;
-    border-top: #305589 5px solid;
     z-index: 101;
     font-weight: bold;
     font-size: 150%;
     margin-top: 50px;
     text-align: center;
-    font-family: Nabila;
+    font-family: iCielAltusSerif;
 }
 
 #footer.bottom {
@@ -308,7 +308,6 @@ a:focus, a:hover,a:active {
 
 #footer .copyright {
     background-color: #305589;
-    padding: 10px 0;
 }
 
 
