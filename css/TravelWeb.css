@@ -52,6 +52,7 @@ a:focus, a:hover,a:active {
     font-size: 240%;
     padding: 13px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .AboutUs:hover {
@@ -97,6 +98,7 @@ a:focus, a:hover,a:active {
     font-family: iCiel Simplifica;
     font-size: 130%;
     font-weight: 600;
+    padding: 20px;
 }
 
 #topNav ul.nav > li a {
