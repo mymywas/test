@@ -4,10 +4,11 @@ body, a {
 
 a:focus, a:hover,a:active {
     color: #00a59a;
+    transition-duration: 0.8;
 }
 
 .myBody {
-    background-image: url(../img/sea.jpg);
+    background-image: url(../img/IMG_4723.JPG);
     background-repeat: no-repeat;
     background-size: cover;
 }
