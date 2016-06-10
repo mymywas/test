@@ -433,7 +433,7 @@ body.boxed #topBar {
 	}
 
 	#topNav nav.nav-main {
-		background-color:#fff;
+		/*background-color:#fff;*/
 	}
 	#topNav div.nav-main-collapse,
 	#topNav div.nav-main-collapse.in {
