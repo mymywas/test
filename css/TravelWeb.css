@@ -46,7 +46,7 @@ a:hover {
 }
 
 .AboutUs {
-    font-family: Pony;
+    font-family: Nabila;
     border: 5px solid white;
     font-size: 240%;
     padding: 29px;
@@ -99,7 +99,7 @@ a:hover {
 }
 
 #topNav ul.nav > li a {
-    font-family: BTBD;
+   font-family: Nabila;
 }
 
 .connectToSocial {
@@ -124,12 +124,12 @@ a:hover {
     color: #305589;
     text-align: center;
     padding: 8px 1px 10px 1px;
-    font-family: iCiel Pacifico;
+    font-family: Nabila;
     font-size: 180%;
 }
 
 .titleBlog {
-    font-family: iCiel Rukola;
+    font-family: Nabila;
     font-size: 160%;
 }
 
@@ -150,6 +150,7 @@ a:hover {
 .readMore {
     text-align: right;
     padding: 15px;
+    font-family: Nabila;
 }
 /*ratio wraper*/
 .ratio-wrapper {
@@ -265,7 +266,7 @@ a:hover {
     font-size: 150%;
     margin-top: 50px;
     text-align: center;
-    font-family: BTBD;
+    font-family: Nabila;
 }
 
 #footer.bottom {
