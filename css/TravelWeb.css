@@ -1,10 +1,11 @@
 body, a {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
     a:focus, a:hover, a:active {
         color: #00a59a;
-        transition-duration: 0.8;
+        transition-duration: 0.8s;
     }
 
 .myBody {
@@ -73,7 +74,7 @@ body, a {
 }
 
 .AboutUs {
-    font-family: Nabila;
+    /*font-family: Nabila;*/
     border: 5px solid white;
     font-size: 240%;
     padding: 13px;
@@ -126,14 +127,14 @@ body, a {
 }
 
 .BlogContent {
-    font-family: iCiel Simplifica;
-    font-size: 130%;
+    /*font-family: iCiel Simplifica;*/
+    /*font-size: 130%;*/
     font-weight: 600;
     padding: 20px;
 }
 
 #topNav ul.nav > li a {
-    font-family: Nabila;
+    /*font-family: Nabila;*/
 }
 
 .connectToSocial {
@@ -148,7 +149,7 @@ body, a {
 
 .myQuote {
     border: 7px solid white;
-    font-family: Nabila;
+    /*font-family: Nabila;*/
     font-size: 500%;
     padding: 15px;
     text-align: left;
@@ -159,13 +160,14 @@ body, a {
     color: #305589;
     text-align: center;
     padding: 8px 1px 10px 1px;
-    font-family: Nabila;
+    /*font-family: Nabila;*/
     font-size: 180%;
 }
 
 .titleBlog {
-    font-family: Nabila;
+    /*font-family: Nabila;*/
     font-size: 160%;
+    padding: 5px;
 }
 
 .content {
@@ -185,8 +187,8 @@ body, a {
 
 .readMore {
     text-align: right;
-    padding: 120px 10px 0px 10px;
-    font-family: Nabila;
+    padding: 100px 10px 0px 10px;
+    /*font-family: Nabila;*/
 }
 
 /*ratio wraper*/
@@ -302,7 +304,7 @@ body, a {
     font-size: 150%;
     margin-top: 50px;
     text-align: center;
-    font-family: iCielAltusSerif;
+    /*font-family: iCielAltusSerif;*/
 }
 
     #footer.bottom {
