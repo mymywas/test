@@ -64,6 +64,7 @@ body, a {
     border-top: 4px solid white;
     padding: 10px;
     font-size: 150%;
+    margin-top: 15px;
 }
 
 .Search {
@@ -170,6 +171,7 @@ body, a {
     background-color: rgba(255,255,255,0.6);
     color: #305589;
     margin-top: 3px;
+    margin-bottom: 10px;
 }
 
 .region {
@@ -433,7 +435,7 @@ body, a {
                 padding-right: 6px;
             }
 
-/*.carousel-control {
+.carousel-control {
     opacity: 0;
 }
 
@@ -458,17 +460,7 @@ body, a {
     transform: translate3d(-1565px, 0px, 0px);
 }
 
-.swiper-container-coverflow .swiper-wrapper, .swiper-container-flip .swiper-wrapper {
-    transform: translate3d(-1565px, 0px, 0px);
-}*/
-.swiper-container {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-    }
+.myslider {
+    border-top: 4px dashed white;
+    border-bottom: 4px dashed white;
+}
