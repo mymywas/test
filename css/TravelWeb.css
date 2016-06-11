@@ -473,6 +473,7 @@ body, a {
 /*timeline*/
 .timeline {
     position: relative;
+    margin-top: 1px;
     margin-bottom: 60px;
 }
 
@@ -595,7 +596,7 @@ body, a {
 
 /** centered **/
 .timeline .timeline-centered .item {
-    background-color: rgba(0,0,0,0.06);
+    background-color: rgba(160,190,218,1);
     padding: 15px;
     margin-bottom: 30px;
     position: relative;
@@ -698,6 +699,7 @@ body, a {
 .timeline .timeline-centered p {
     content: '';
     clear: both;
+    padding-top: 5px;
 }
 
 @media only screen and (max-width: 768px) {
