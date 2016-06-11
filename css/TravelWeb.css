@@ -296,10 +296,10 @@ body, a {
     }
 /*footer*/
 #footer {
-    color: #6D97C9;
+    color: white;
     display: block;
     vertical-align: bottom;
-    background-color: rgba(255,255,255,0.7);
+    background-color: #A0BEDA;
     z-index: 101;
     font-weight: bold;
     /*font-size: 150%;*/
