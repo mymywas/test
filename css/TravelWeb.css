@@ -44,6 +44,7 @@ body, a {
 
 .logo-img {
     text-align: center;
+    margin-top: 10px;
 }
 
 .WebHeader {
@@ -156,11 +157,6 @@ body, a {
 .Quote {
     border: 7px solid white;
 }
-
-    .Quote i {
-        float: right;
-        padding: 0px 42px 23px 0px;
-    }
 
     .Quote a {
         cursor: pointer;
@@ -543,4 +539,9 @@ body, a {
 .BlockContent {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.myPhoto {
+    text-align: right;
+    padding: 0px 41px 22px 0px;
 }
