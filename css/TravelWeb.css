@@ -159,7 +159,7 @@ body, a {
 
     .Quote i {
         float: right;
-        padding: 0px 23px 23px 0px;
+        padding: 0px 42px 23px 0px;
     }
 
     .Quote a {
@@ -169,7 +169,7 @@ body, a {
 .myQuote {
     /*font-family: Nabila;*/
     font-size: 360.2%;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 45px;
     text-align: left;
 }
 
