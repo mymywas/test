@@ -156,6 +156,9 @@ body, a {
     .connectToSocial i {
         padding: 15px;
     }
+    .connectToSocial i:hover{
+        color: #00a59a;
+    }
 
 .Quote {
     border: 7px solid white;
