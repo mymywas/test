@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/ap-scroll-top.css" type="text/css" media="all" />
+    <script src="./script/ap-scroll-top.js"></script>
     <link href="./css/TravelWeb.css" rel="stylesheet" />
     <link href="./lib/font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet">
     <link href="./css/mobile.css" rel="stylesheet" />
@@ -86,20 +88,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="AboutUs">
-                                    <a href="#">Lều Lang là gì nhỉ?</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-md-7 Quote">
-                        <div class="myQuote">
-                            My roads are better than your love
-                        </div>
-                        <div class="myPhoto">
-                            <a href="#"><i class="fa fa-camera-retro fa-3x" aria-hidden="true"></i></a>
+                    <div class="col-md-7">
+                        <div class="AboutUs">
+                            <a href="#">Lều Lang là gì nhỉ?</a>
                         </div>
                     </div>
                 </div>
@@ -146,6 +138,12 @@
                 </div>
             </div>
         </footer>
+        <a href="#" id="toTop" style="display:inline;"></a>
     </div>
+    <script type="text/javascript">
+        $.apScrollTop().on('apstScrolledTo', function (evt, details) {
+            console.log('apScrollTop: scrolledTo / position: ' + details.position);
+        });
+    </script>
 </body>
 </html>

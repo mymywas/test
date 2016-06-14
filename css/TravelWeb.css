@@ -1,6 +1,6 @@
 body, a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: HelveticaRoundedLTStd,Arial, Helvetica, sans-serif;
 }
 
     a:focus, a:hover, a:active {
@@ -67,7 +67,6 @@ body, a {
     border-top: 4px solid white;
     padding: 15px;
     font-size: 150%;
-    margin-top: 15px;
     font-weight: bolder;
     text-align: center;
 }
@@ -76,11 +75,15 @@ body, a {
     margin-top: 10px;
 }
 
+@font-face {
+    src: url("../front/UVF HelveticaRoundedLTStd-Bd.otf");
+    font-family: HelveticaRoundedLTStd;
+}
+
 .AboutUs {
-    /*font-family: Nabila;*/
     border: 5px solid white;
-    font-size: 240%;
-    padding: 13px;
+    font-size: 360%;
+    padding: 26px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -544,4 +547,30 @@ body, a {
 .myPhoto {
     text-align: right;
     padding: 0px 41px 22px 0px;
+}
+/*toTop*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/top_move.png) no-repeat 0px 0px;
+}
+
+#toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
 }
