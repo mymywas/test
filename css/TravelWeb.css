@@ -4,7 +4,7 @@ body, a {
 }
 
     a:focus, a:hover, a:active {
-        color: #00a59a;
+        color: white;
         transition-duration: 0.5s;
     }
 
@@ -93,7 +93,7 @@ body, a {
 }
 
 .AboutUs:hover {
-    background: #F2385A;
+    background: #00a59a;
     transition-duration: 0.6s;
 }
 
