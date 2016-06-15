@@ -20,8 +20,6 @@ body, a {
 
 .swiper-container {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .swiper-slide {
@@ -83,7 +81,7 @@ body, a {
 .AboutUs {
     border: 5px solid white;
     font-size: 360%;
-    padding: 26px;
+    padding: 13px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -156,9 +154,10 @@ body, a {
     .connectToSocial i {
         padding: 15px;
     }
-    .connectToSocial i:hover{
-        color: #00a59a;
-    }
+
+        .connectToSocial i:hover {
+            color: #00a59a;
+        }
 
 .Quote {
     border: 7px solid white;
@@ -255,6 +254,10 @@ body, a {
         left: 0;
         overflow: hidden;
     }
+
+.img-container {
+    height: 100%;
+}
 /*search*/
 .search-form .form-group {
     float: right !important;
@@ -579,33 +582,35 @@ body, a {
 }
 /*menu effect*/
 .cl-effect-14 a {
-	padding: 0 20px;
-	height: 65px;
-	line-height: 45px;
+    padding: 0 20px;
+    height: 65px;
+    line-height: 45px;
 }
 
-.cl-effect-14 a::before,
-.cl-effect-14 a::after {
-	position: absolute;
-	width: 45px;
-	height: 2px;
-	background: #fff;
-	content: '';
-	opacity: 0.2;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-	pointer-events: none;
+    .cl-effect-14 a::before,
+    .cl-effect-14 a::after {
+        position: absolute;
+        width: 45px;
+        height: 2px;
+        background: #fff;
+        content: '';
+        opacity: 0.2;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        pointer-events: none;
+    }
+
+    .cl-effect-14 a::before {
+        top: 0px !important;
+    }
+
+.cl-effect-14 li:nth-child(8) a::after {
+    display: none;
 }
 
-.cl-effect-14 a::before{
-	top: 0px !important;
-}
-.cl-effect-14 li:nth-child(8) a::after{
-	display:none;
-}
 .cl-effect-14 a::before {
-	top: 10px;
+    top: 10px;
     left: 0;
     -webkit-transform: rotate(98deg);
     -moz-transform: rotate(98deg);
@@ -616,14 +621,14 @@ body, a {
 }
 
 .cl-effect-14 a::after {
-	right: 0;
-	bottom: 0;
-	-webkit-transform: rotate(98deg);
-	-moz-transform: rotate(98deg);
-	transform: rotate(98deg);
-	-webkit-transform-origin: 100% 0;
-	-moz-transform-origin: 100% 0;
-	transform-origin: 100% 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(98deg);
+    -moz-transform: rotate(98deg);
+    transform: rotate(98deg);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    transform-origin: 100% 0;
 }
 
 .cl-effect-14 a:hover::before,
@@ -632,21 +637,57 @@ body, a {
 .cl-effect-14 a:focus::after,
 .cl-effect-14 a.active::before,
 .cl-effect-14 a.active::after {
-	opacity: 1;
+    opacity: 1;
 }
 
 .cl-effect-14 a:hover::before,
-.cl-effect-14 a:focus::before,.cl-effect-14 a.active::before {
-	left: 50%;
-	-webkit-transform: rotate(0deg) translateX(-50%);
-	-moz-transform: rotate(0deg) translateX(-50%);
-	transform: rotate(0deg) translateX(-50%);
+.cl-effect-14 a:focus::before, .cl-effect-14 a.active::before {
+    left: 50%;
+    -webkit-transform: rotate(0deg) translateX(-50%);
+    -moz-transform: rotate(0deg) translateX(-50%);
+    transform: rotate(0deg) translateX(-50%);
 }
 
 .cl-effect-14 a:hover::after,
-.cl-effect-14 a:focus::after,.cl-effect-14 a.active::after{
-	right: 50%;
-	-webkit-transform: rotate(0deg) translateX(50%);
-	-moz-transform: rotate(0deg) translateX(50%);
-	transform: rotate(0deg) translateX(50%);
+.cl-effect-14 a:focus::after, .cl-effect-14 a.active::after {
+    right: 50%;
+    -webkit-transform: rotate(0deg) translateX(50%);
+    -moz-transform: rotate(0deg) translateX(50%);
+    transform: rotate(0deg) translateX(50%);
+}
+/*slider index*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+.swiper-container:hover .swiper-button-next{
+    display: block;
+}
+.swiper-container:hover .swiper-button-prev{
+    display: block;
 }

@@ -11,6 +11,8 @@
     <link href="./css/TravelWeb.css" rel="stylesheet" />
     <link href="./lib/font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet">
     <link href="./css/mobile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./lib/Swiper-master/dist/js/css/swiper.min.css">
+    <script src="./lib/Swiper-master/dist/js/swiper.min.js"></script>
 </head>
 <body>
     <div class="myBody">
@@ -91,10 +93,41 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-7">
                         <div class="AboutUs">
                             <a href="#">Lều Lang là gì nhỉ?</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="ratio-wrapper ratio-wrapper-2-1">
+                                        <div class="ratio-item">
+                                            <img src="./img/IMG_0111.JPG" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ratio-wrapper ratio-wrapper-2-1">
+                                        <div class="ratio-item">
+                                            <img src="./img/DSC_1006.jpg" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ratio-wrapper ratio-wrapper-2-1">
+                                        <div class="ratio-item">
+                                            <img src="./img/IMG_2889.JPG" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -148,5 +181,18 @@
             console.log('apScrollTop: scrolledTo / position: ' + details.position);
         });
     </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            autoplay: 2000,
+            speed: 1000,
+            loop: true,
+            spaceBetween: 30
+        });
+    </script>
+
 </body>
 </html>
