@@ -474,8 +474,9 @@ body, a {
 
 .MysSwiper-container {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    margin-bottom: 5px;
 }
 
 .swiper-slide {
@@ -490,8 +491,8 @@ body, a {
 }
 
 .myslider {
-    border-top: 4px dashed white;
-    border-bottom: 4px dashed white;
+    /*border-top: 4px dashed white;
+    border-bottom: 4px dashed white;*/
 }
 /*content*/
 .myIMGBlog {
