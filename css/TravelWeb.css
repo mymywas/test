@@ -84,9 +84,11 @@ body, a {
     text-align: center;
     margin-bottom: 20px;
 }
-.LeuLang{
+
+.LeuLang {
     font-size: 150%;
 }
+
 .myBlogPostItem {
     background: rgba(255,255,255,0.6);
 }
@@ -490,6 +492,10 @@ body, a {
     transform: translate3d(-1565px, 0px, 0px);
 }
 
+.MysSwiper-container .swiper-slide {
+    border: 5px solid;
+}
+
 .myslider {
     /*border-top: 4px dashed white;
     border-bottom: 4px dashed white;*/
@@ -684,15 +690,18 @@ body, a {
     align-items: center;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next, .swiper-button-prev {
     display: none;
 }
-.swiper-container:hover .swiper-button-next{
+
+.swiper-container:hover .swiper-button-next {
     display: block;
 }
-.swiper-container:hover .swiper-button-prev{
+
+.swiper-container:hover .swiper-button-prev {
     display: block;
 }
+
 .swiper-container {
     border: 5px solid;
 }
