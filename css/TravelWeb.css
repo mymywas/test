@@ -80,12 +80,13 @@ body, a {
 
 .AboutUs {
     border: 5px solid white;
-    font-size: 360%;
-    padding: 15.5px;
+    font-size: 310%;
     text-align: center;
     margin-bottom: 20px;
 }
-
+.LeuLang{
+    font-size: 150%;
+}
 .myBlogPostItem {
     background: rgba(255,255,255,0.6);
 }
