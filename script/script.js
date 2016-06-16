@@ -6,8 +6,8 @@ function sliderIndex() {
         centeredSlides: true,
         slidesPerView: 'auto',
         loop: true,
-        speed: 2000,
-        autoplay: 1000,
+        speed: 3000,
+        autoplay: 3000,
         coverflow: {
             rotate: 50,
             stretch: 0,
