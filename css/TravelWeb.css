@@ -1,6 +1,7 @@
 body, a {
     color: white;
     font-family: HelveticaRoundedLTStd,Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
     a:focus, a:hover, a:active {
