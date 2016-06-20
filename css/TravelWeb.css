@@ -726,7 +726,24 @@ body, a {
         margin-left: 30px;
         margin-right: 30px;
     }
-    .leulang ul li i{
-        padding:20px;
-        color: #19B5FE;
-    }
+
+        .leulang ul li i {
+            padding: 20px;
+            color: #19B5FE;
+        }
+
+.leftBlog {
+    border: 1px solid;
+    padding: 25px;
+    background: #7f8c8d;
+    border-radius: 5px;
+}
+
+.rightBlog {
+    border: 1px solid;
+    background: #7f8c8d;
+    border-radius: 5px;
+}
+.rightBlog a{
+    color: black;
+}
