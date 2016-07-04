@@ -81,7 +81,7 @@ body {
 
 .AboutUs {
     border: 5px solid white;
-    font-size: 310%;
+    font-size: 265%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -759,11 +759,11 @@ body {
         color: black;
     }
 
-#blog .col-md-4 {
+#MyBlog .col-md-4 {
     padding: 0;
 }
 
-#blog .row {
+#MyBlog .row {
     border: 4px solid;
 }
 .w3-animate-zoom{
@@ -771,4 +771,15 @@ body {
 }
 .w3-modal{
     padding-top: 30px!important;
+}
+@font-face {
+    src: url("../front/icielBrandonText-Bold.tt");
+    font-family: icielBrandonText;
+}
+#MyBlog .myTitleBlog, #topNav li a{
+    font-family: icielBrandonText;
+    font-size: 120%!important;
+}
+#mySlider .row{
+    overflow: hidden;
 }
