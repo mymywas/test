@@ -4,10 +4,10 @@ body {
     overflow-x: hidden;
 }
 
-    a:focus, a:hover, a:active {
-        color: white;
-        transition-duration: 0.5s;
-    }
+a:focus, a:hover, a:active {
+    color: white;
+    transition-duration: 0.5s;
+}
 
 .myBody {
     background-image: url(../img/IMG_4723.JPG);
@@ -518,6 +518,7 @@ body {
     left: 32%;
     right: 30%;
 }
+
 .block {
     background-color: white;
     color: #636769;
@@ -533,9 +534,11 @@ body {
     .block span {
         color: rgba(255,255,255,0);
     }
-     .block .myTitleBlog{
-         color: rgba(255,255,255,0);
-     }
+
+    .block .myTitleBlog {
+        color: rgba(255,255,255,0);
+    }
+
     .block a {
         color: black;
     }
@@ -561,9 +564,11 @@ body {
             color: rgba(255,255,255,1);
             transition-duration: 0.2s;
         }
-         .block:hover .myTitleBlog{
+
+        .block:hover .myTitleBlog {
             color: rgba(255,255,255,1);
-         }
+        }
+
 .BlockContent {
     padding-left: 15px;
     padding-right: 15px;
@@ -766,20 +771,34 @@ body {
 #MyBlog .row {
     border: 4px solid;
 }
-.w3-animate-zoom{
-    width: 58%!important;
+
+.w3-animate-zoom {
+    width: 58% !important;
 }
-.w3-modal{
-    padding-top: 30px!important;
+
+.w3-modal {
+    padding-top: 30px !important;
 }
+
 @font-face {
     src: url("../front/icielBrandonText-Bold.tt");
     font-family: icielBrandonText;
 }
-#MyBlog .myTitleBlog, #topNav li a{
+
+#MyBlog .myTitleBlog, #topNav li a {
     font-family: icielBrandonText;
-    font-size: 120%!important;
+    font-size: 120% !important;
 }
-#mySlider .row{
+
+#mySlider .row {
     overflow: hidden;
+}
+
+#blog .block {
+    background: white;
+    padding: 7px;
+}
+
+#blog .ratio-wrapper {
+    box-shadow: 0px -1px 10px 3px #7f8c8d;
 }
