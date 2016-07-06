@@ -1,6 +1,9 @@
 function sliderIndex() {
     var swiper = new Swiper('.MysSwiper-container', {
         pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
