@@ -7,6 +7,7 @@ body {
 a:focus, a:hover, a:active {
     color: white;
     transition-duration: 0.5s;
+    text-decoration:none;
 }
 
 .myBody {
@@ -809,6 +810,7 @@ a:focus, a:hover, a:active {
 #blog a {
     color: #16a085;
     font-weight: 400;
+    transition: 0.6s ease;
 }
 
 .quotes {
@@ -834,6 +836,7 @@ a:focus, a:hover, a:active {
 .text-center {
     text-align: center;
 }
+
 .text-right {
     text-align: right;
 }
@@ -975,9 +978,15 @@ a:focus, a:hover, a:active {
             display: none;
         }
 }
-.btnLoadMore{
-    color: white!important;
+
+.btnLoadMore {
+    color: white !important;
 }
-.FontWeight800{
-    font-weight: 800!important;
+
+.FontWeight800 {
+    font-weight: 800 !important;
+}
+
+#blog a:hover {
+    font-size: 108%;
 }
