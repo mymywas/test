@@ -990,3 +990,6 @@ a:focus, a:hover, a:active {
 #blog a:hover {
     font-size: 108%;
 }
+.MesSwiper-container .swiper-slide{
+    border: 5px solid;
+}
