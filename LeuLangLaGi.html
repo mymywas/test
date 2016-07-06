@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -120,7 +120,45 @@
                         <div class="col-md-3"></div>
                     </div>
                     <div id="blog" class="blog leulang">
-                        <ul>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2">
+                                <div class="iconQuote">
+                                    <a href="#" data-toggle="tooltip" title="Là dành cho những đôi chân thích đi lang thang."><i class="fa fa-heart fa-5x" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="quotes">Là dành cho những đôi chân thích đi lang thang.</div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="iconQuote">
+                                    <a href="#" data-toggle="tooltip" title="Là đi ngắm những khung cảnh đẹp ở mọi nơi."><i class="fa fa-camera-retro fa-5x" aria-hidden="true"></i></a>
+
+                                </div>
+                                <div class="quotes">Là đi ngắm những khung cảnh đẹp ở mọi nơi.</div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="iconQuote">
+                                    <a href="#" data-toggle="tooltip" title="Là sống như những kẻ du mục với chiếc lều trên xe."><i class="fa fa-motorcycle fa-5x" aria-hidden="true"></i></a>
+
+                                </div>
+                                <div class="quotes">Là sống như những kẻ du mục với chiếc lều trên xe.</div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="iconQuote">
+                                    <a href="#" data-toggle="tooltip" title="Là đưa nhau đi lang bạt khắp chốn."><i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i></a>
+
+                                </div>
+                                <div class="quotes">Là đưa nhau đi lang bạt khắp chốn.</div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="iconQuote">
+                                    <a href="#" data-toggle="tooltip" title="Là những chuyến hành trình mới đang chờ ở phía trước."><i class="fa fa-key fa-5x" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="quotes">Là những chuyến hành trình mới đang chờ ở phía trước.</div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+
+                        <!--<ul>
                             <li>
                                 <a href="#" data-toggle="tooltip" title="Là dành cho những đôi chân thích đi lang thang."><i class="fa fa-heart fa-5x" aria-hidden="true"></i></a>
                             </li>
@@ -136,7 +174,7 @@
                             <li>
                                 <a href="#" data-toggle="tooltip" title="Là những chuyến hành trình mới đang chờ ở phía trước."><i class="fa fa-key fa-5x" aria-hidden="true"></i></a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
@@ -179,3 +217,19 @@
 
 </body>
 </html>
+<script>
+    var maxHeight = -1;
+    $('.quotes').each(function () {
+        if ($(this).height() > maxHeight) {
+            maxHeight = $(this).height();
+        }
+    });
+    $('.quotes').height(maxHeight);
+    //function findBigClass() {
+    //    var temp = 0;
+    //    for (var i = 0; i < 6; i++) {
+
+    //        alert($('.quotes').css("height"));
+    //    }
+    //}
+</script>

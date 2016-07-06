@@ -517,6 +517,13 @@ a:focus, a:hover, a:active {
     bottom: 5%;
     left: 32%;
     right: 30%;
+    /*position: absolute;
+    padding: 15px;
+    font-size: 170%;
+    top: 35%;
+    text-align: center;
+    background: rgba(255,255,255,0.4);
+    left: 0%;*/
 }
 
 .block {
@@ -784,21 +791,39 @@ a:focus, a:hover, a:active {
     src: url("../front/icielBrandonText-Bold.tt");
     font-family: icielBrandonText;
 }
+@font-face {
+    src: url("../front/DejaVuSans.ttf");
+    font-family: DejaVuSans;
+}
 
 #MyBlog .myTitleBlog, #topNav li a {
     font-family: icielBrandonText;
-    font-size: 120% !important;
+    font-size: 125% !important;
 }
 
 #mySlider .row {
     overflow: hidden;
 }
 
-#blog .block {
-    background: white;
-    padding: 7px;
+#blog a {
+    color: #16a085;
 }
 
-#blog .ratio-wrapper {
-    box-shadow: 0px -1px 10px 3px #7f8c8d;
+.quotes {
+    background: rgba(34,34,34,0.6);
+    padding: 10px  10px;
+    margin-top: 10px;
+    font-family: DejaVuSans;
+    border-radius: 4px;
+}
+
+.iconQuote {
+    background: rgba(255,255,255,0.6);
+    padding: 45px;
+    border-radius: 109px;
+}
+@media screen and (max-width: 1200px){
+    .AboutUs{
+        font-size: 160%;
+    }
 }

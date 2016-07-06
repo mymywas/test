@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="connectToSocial">
+                        <div class="connectToSocial" id="connectToSocial">
                             <a href="https://www.facebook.com/" target="_blank">
                                 <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
                             </a>
@@ -85,7 +85,7 @@
                                 <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <div class="row">
+                        <div class="row" id="boxSearch">
                             <div class="col-md-12">
                                 <div class="Search">
                                     <form action="" class="search-form">
@@ -98,14 +98,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="AboutUs">
+                        <div class="AboutUs" id="Aboutus">
                             <a href="LeuLangLaGi.html">
                                 <p class="LeuLang">Lều Lang</p>
                                 <p>là gì nhỉ?</p>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7" id="SliderIndex">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -284,6 +284,37 @@
             spaceBetween: 30
         });
     </script>
-
+    <script>
+        if ($(window).width() < 1200) {
+            var swiper = document.getElementById("SliderIndex").offsetHeight;
+            var ToSocial = document.getElementById("connectToSocial").offsetHeight;
+            var search = document.getElementById("boxSearch").offsetHeight;
+            temp = swiper - (search + ToSocial);
+            about = document.getElementById("Aboutus").offsetHeight;
+            console.log(temp);
+            console.log(about);
+            if (temp < about) {
+                document.getElementById("Aboutus").style.fontSize = '160%';
+            }
+        }
+        //var temp = 0;
+        //var about = 0;
+        //var font = document.getElementById("Aboutus").style.fontSize;
+        //console.log(font);
+        //do {
+        //    var swiper = document.getElementById("SliderIndex").offsetHeight;
+        //    var ToSocial = document.getElementById("connectToSocial").offsetHeight;
+        //    var search = document.getElementById("boxSearch").offsetHeight;
+        //    temp = swiper - (search + ToSocial);
+        //    about = document.getElementById("Aboutus").offsetHeight;
+        //    document.getElementById("Aboutus").style.fontSize = - '10%';
+        //    font = font - 10;
+        //    console.log(temp);
+        //    console.log(about);
+        //}
+        //while (temp >= about);
+        //document.getElementById("Aboutus").style.fontSize = font+'%';
+        //document.getElementById("Aboutus").style.height = temp+'px';
+    </script>
 </body>
 </html>
