@@ -7,9 +7,15 @@ body {
 a:focus, a:hover, a:active {
     color: white;
     transition-duration: 0.5s;
-    text-decoration:none;
+    text-decoration: none;
 }
-
+/*html {
+    background: url("../img/IMG_4723.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
 .myBody {
     background-image: url(../img/IMG_4723.JPG);
     background-repeat: no-repeat;
@@ -136,9 +142,6 @@ a:focus, a:hover, a:active {
 }
 
 .BlogContent {
-    /*font-family: iCiel Simplifica;*/
-    /*font-size: 130%;*/
-    font-weight: 600;
     padding: 20px;
 }
 
@@ -808,7 +811,8 @@ a:focus, a:hover, a:active {
 }
 
 #blog a {
-    color: #16a085;
+    color:#024443;
+    /*color: #3BC2DF;*/
     font-weight: 400;
     transition: 0.6s ease;
 }
@@ -990,7 +994,29 @@ a:focus, a:hover, a:active {
 #blog a:hover {
     font-size: 108%;
 }
-.MesSwiper-container .swiper-slide{
-    border: 5px solid;
 
+.MesSwiper-container .swiper-slide {
+    border: 5px solid;
+}
+
+.author:after {
+    border: solid transparent;
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left-color: rgba(127,140,141,1);
+    border-width: 15px;
+    top: 9px;
+    right: -12px;
+}
+
+.noteBlog {
+    position: absolute;
+    bottom: 4%;
+    right: 36%;
+    left: 36%;
+}
+#topMain a:hover{
+    color: white!important;
 }
