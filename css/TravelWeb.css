@@ -44,7 +44,7 @@ a:focus, a:hover, a:active {
 }
 
 .logo {
-    width: 5%;
+    width: 50px;
     display: inline-block;
 }
 
@@ -811,7 +811,7 @@ a:focus, a:hover, a:active {
 }
 
 #blog a {
-    color:#024443;
+    color: #024443;
     /*color: #3BC2DF;*/
     font-weight: 400;
     transition: 0.6s ease;
@@ -823,6 +823,7 @@ a:focus, a:hover, a:active {
     margin-top: 10px;
     font-family: DejaVuSans;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .iconQuote {
@@ -949,6 +950,7 @@ a:focus, a:hover, a:active {
     content: ' ';
     clear: both;
     font-size: 19px;
+    margin-right: 50px;
 }
 
 .timeline .timeline-centered p {
@@ -1017,6 +1019,11 @@ a:focus, a:hover, a:active {
     right: 36%;
     left: 36%;
 }
-#topMain a:hover{
-    color: white!important;
+
+#topMain a:hover {
+    color: white !important;
+}
+
+.author {
+    margin-bottom: 10px;
 }

@@ -1,6 +1,7 @@
 function sliderIndex() {
     var swiper = new Swiper('.MysSwiper-container', {
         pagination: '.swiper-pagination',
+        slideToClickedSlide: true,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -24,3 +25,6 @@ function sliderIndex() {
     });
 }
 sliderIndex();
+$.apScrollTop().on('apstScrolledTo', function (evt, details) {
+    console.log('apScrollTop: scrolledTo / position: ' + details.position);
+});
