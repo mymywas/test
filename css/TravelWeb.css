@@ -827,9 +827,9 @@ a:focus, a:hover, a:active {
 }
 
 .iconQuote {
-    background: rgba(255,255,255,0.6);
-    padding: 45px;
-    border-radius: 109px;
+    height: 170px;
+    border-radius: 300px;
+    width: 170px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -838,7 +838,7 @@ a:focus, a:hover, a:active {
     }
 }
 
-.text-center {
+.text-center; {
     text-align: center;
 }
 

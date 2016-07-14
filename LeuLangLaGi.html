@@ -103,36 +103,33 @@
                         <div class="row">
                             <div class="col-md-1"></div>
                             <div class="col-md-2">
-                                <div class="iconQuote">
-                                    <a href="" data-toggle="tooltip" title="Là dành cho những đôi chân thích đi lang thang."><i class="fa fa-heart fa-5x" aria-hidden="true"></i></a>
-                                </div>
+                                <a href="" data-toggle="tooltip" title="Là dành cho những đôi chân thích đi lang thang.">
+                                    <img src="./img/shoes.jpg" class="iconQuote" />
+                                </a>
                                 <div class="quotes">Là dành cho những đôi chân thích đi lang thang.</div>
                             </div>
                             <div class="col-md-2">
-                                <div class="iconQuote">
-                                    <a href="" data-toggle="tooltip" title="Là đi ngắm những khung cảnh đẹp ở mọi nơi."><i class="fa fa-camera-retro fa-5x" aria-hidden="true"></i></a>
-
-                                </div>
+                                <a href="" data-toggle="tooltip" title="Là đi ngắm những khung cảnh đẹp ở mọi nơi.">
+                                    <img src="./img/IMG_3591.JPG" class="iconQuote" />
+                                </a>
                                 <div class="quotes">Là đi ngắm những khung cảnh đẹp ở mọi nơi.</div>
                             </div>
                             <div class="col-md-2">
-                                <div class="iconQuote">
-                                    <a href="" data-toggle="tooltip" title="Là sống như những kẻ du mục với chiếc lều trên xe."><i class="fa fa-motorcycle fa-5x" aria-hidden="true"></i></a>
-
-                                </div>
+                                <a href="" data-toggle="tooltip" title="Là sống như những kẻ du mục với chiếc lều trên xe.">
+                                    <img src="./img/IMG_2661.JPG" class="iconQuote" />
+                                </a>
                                 <div class="quotes">Là sống như những kẻ du mục với chiếc lều trên xe.</div>
                             </div>
                             <div class="col-md-2">
-                                <div class="iconQuote">
-                                    <a href="" data-toggle="tooltip" title="Là đưa nhau đi lang bạt khắp chốn."><i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i></a>
-
-                                </div>
+                                <a href="" data-toggle="tooltip" title="Là đưa nhau đi lang bạt khắp chốn.">
+                                    <img src="./img/DSC01590.jpg" class="iconQuote" />
+                                </a>
                                 <div class="quotes">Là đưa nhau đi lang bạt khắp chốn.</div>
                             </div>
                             <div class="col-md-2">
-                                <div class="iconQuote">
-                                    <a href="" data-toggle="tooltip" title="Là những chuyến hành trình mới đang chờ ở phía trước."><i class="fa fa-key fa-5x" aria-hidden="true"></i></a>
-                                </div>
+                                <a href="" data-toggle="tooltip" title="Là những chuyến hành trình mới đang chờ ở phía trước.">
+                                    <img src="./img/IMG_3810.JPG" class="iconQuote" />
+                                </a>
                                 <div class="quotes">Là những chuyến hành trình mới đang chờ ở phía trước.</div>
                             </div>
                             <div class="col-md-1"></div>
@@ -160,13 +157,25 @@
         });
     </script>-->
     <script>
-        var maxHeight = -1;
-        $('.quotes').each(function () {
-            if ($(this).outerHeight() > maxHeight) {
-                maxHeight = $(this).height();
+        $(function () {
+            var maxHeight = -1;
+            $('.quotes').each(function () {
+                if ($(this).outerHeight() > maxHeight) {
+                    maxHeight = $(this).height();
+                }
+            });
+            $('.quotes').height(maxHeight + 20);
+            if ($(window).width() <= 427) {
+                $('.swiper-slide').each(function () {
+                    $(this).css('height', '220');
+                });
             }
-        });
-        $('.quotes').height(maxHeight+20);
+            if ($(window).width() <= 549 && $(window).width() > 427) {
+                $('.swiper-slide').each(function () {
+                    $(this).css('height', '300');
+                });
+            }
+        })
     </script>
     <script>
         var swiper = new Swiper('.MesSwiper-container', {
