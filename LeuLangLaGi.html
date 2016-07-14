@@ -103,33 +103,23 @@
                         <div class="row">
                             <div class="col-md-1"></div>
                             <div class="col-md-2">
-                                <a href="" data-toggle="tooltip" title="Là dành cho những đôi chân thích đi lang thang.">
-                                    <img src="./img/shoes.jpg" class="iconQuote" />
-                                </a>
+                                <img onclick="onClick(this)" src="./img/shoes.jpg" class="iconQuote" />
                                 <div class="quotes">Là dành cho những đôi chân thích đi lang thang.</div>
                             </div>
                             <div class="col-md-2">
-                                <a href="" data-toggle="tooltip" title="Là đi ngắm những khung cảnh đẹp ở mọi nơi.">
-                                    <img src="./img/IMG_3591.JPG" class="iconQuote" />
-                                </a>
+                                <img onclick="onClick(this)" src="./img/IMG_3591.JPG" class="iconQuote" />
                                 <div class="quotes">Là đi ngắm những khung cảnh đẹp ở mọi nơi.</div>
                             </div>
                             <div class="col-md-2">
-                                <a href="" data-toggle="tooltip" title="Là sống như những kẻ du mục với chiếc lều trên xe.">
-                                    <img src="./img/IMG_2661.JPG" class="iconQuote" />
-                                </a>
+                                <img onclick="onClick(this)" src="./img/IMG_2661.JPG" class="iconQuote" />
                                 <div class="quotes">Là sống như những kẻ du mục với chiếc lều trên xe.</div>
                             </div>
                             <div class="col-md-2">
-                                <a href="" data-toggle="tooltip" title="Là đưa nhau đi lang bạt khắp chốn.">
-                                    <img src="./img/DSC01590.jpg" class="iconQuote" />
-                                </a>
+                                <img onclick="onClick(this)" src="./img/DSC01590.jpg" class="iconQuote" />
                                 <div class="quotes">Là đưa nhau đi lang bạt khắp chốn.</div>
                             </div>
                             <div class="col-md-2">
-                                <a href="" data-toggle="tooltip" title="Là những chuyến hành trình mới đang chờ ở phía trước.">
-                                    <img src="./img/IMG_3810.JPG" class="iconQuote" />
-                                </a>
+                                <img onclick="onClick(this)" src="./img/IMG_3810.JPG" class="iconQuote" />
                                 <div class="quotes">Là những chuyến hành trình mới đang chờ ở phía trước.</div>
                             </div>
                             <div class="col-md-1"></div>
@@ -150,6 +140,19 @@
             </div>
         </footer>
         <a href="" id="toTop" style="display:inline;"></a>
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'" style="z-index:10000">
+            <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width:100%">
+            </div>
+        </div>
+
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+            }
+        </script>
     </div>
     <!--<script type="text/javascript">
         $.apScrollTop().on('apstScrolledTo', function (evt, details) {

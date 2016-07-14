@@ -831,6 +831,7 @@ a:focus, a:hover, a:active {
     height: 170px;
     border-radius: 300px;
     width: 170px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
