@@ -824,6 +824,7 @@ a:focus, a:hover, a:active {
     font-family: DejaVuSans;
     border-radius: 4px;
     margin-bottom: 10px;
+    font-size: 80%;
 }
 
 .iconQuote {
