@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <link href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Test by mymywas</title>
+        <style>
+            .d1{
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                background: black;
+                -webkit-transition: border-radius 1.5s ease-out 2s;
+                -moz-transition: border-radius 1.5s ease-out 2s;
+                -o-transition: border-radius 1.5s ease-out 2s;
+                transition: border-radius 1.5s ease-out 2s;
+            }
+            .d1:hover{
+                border-radius: 50px;
+
+            }
+            a{
+                font-size: 300%;
+                transition: 2s;
+            }
+            a:active{
+                color: red;
+
+            }
+            a:focus{
+                color: yellow;
+            }
+            a:visited{
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                    <div class="input-group-addon">.00</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Transfer cash</button>
+        </form>
+        <!-- Standard button -->
+        <button type="button" class="btn btn-success">Default</button>
+
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-success">Primary</button>
+
+        <!-- Indicates a successful or positive action -->
+        <button type="button" class="btn btn-success">Success</button>
+
+        <!-- Contextual button for informational alert messages -->
+        <button type="button" class="btn btn-info">Info</button>
+
+        <!-- Indicates caution should be taken with this action -->
+        <button type="button" class="btn btn-success">Warning</button>
+
+        <!-- Indicates a dangerous or potentially negative action -->
+        <button type="button" class="btn btn-success">Danger</button>
+
+        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+        <button type="button" class="btn btn-success">Link</button>
+        <div class="d1">
+        </div>
+        <a href="https://www.facebook.com/">FaceBook</a>
+        To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+        To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+    </body>
+</html>

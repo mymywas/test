@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Test by mymywas</title>
+    <style>
+        .p1 {
+            font-family: "Times New Roman";
+            color: white;
+            font-size: 300%;
+            font-weight: normal;
+            text-decoration: underline;
+            width: 20%;
+            margin-left: 11%;
+            padding: 0.5% 0.5%;
+            text-align: center;
+        }
+
+        .p2 {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: white;
+            font-size: 250%;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .p3 {
+            font-weight: normal;
+            margin-top: 0%;
+            font-size: 250%;
+            text-align: center;
+        }
+
+        .p4 {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: white;
+            font-size: 450%;
+            font-weight: normal;
+            padding: 5% 1% 20% 1%;
+        }
+
+        .p5 {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: white;
+            font-size: 250%;
+            font-weight: normal;
+            margin-top: 0%;
+            padding: 1% 1% 4% 1%;
+            border-bottom: 1px;
+            box-shadow: 0px 3px #D23030;
+        }
+
+        .d1 {
+            margin: 0% 3% 2% 25%;
+            width: 50%;
+            text-align: center;
+        }
+
+        .d2 {
+            padding-left: 7%;
+            margin: 3% 3% 3% 3%;
+            float: left;
+            width: 10%;
+            text-align: center;
+        }
+
+        .bigDiv {
+            min-width: 1200px;
+            min-height: 500px;
+        }
+
+        .hn1 {
+            height: 120px;
+            box-sizing: border-box;
+            padding-top: 2.3%;
+        }
+
+        .hn2 {
+            height: 150px;
+        }
+
+        body {
+            margin: 70px 50px 50px 50px;
+            background: #F64646;
+        }
+
+        span {
+            font-family: 'Times New Roman';
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bigDiv">
+        <div class="hn1">
+            <div class="p1">
+                <span>Mỹ Mỹ</span>
+            </div>
+        </div>
+        <div class="hn2">
+            <div class="d1">
+                <div class="p2">
+                    <span>Tôi đang làm một website</span>
+                </div>
+                <div class="p2 p3">
+                    <span>Hãy chờ tới ngày đó!!!</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="d2">
+                <div class="p4">
+                    <span id="DayRemain"></span>
+                </div>
+                <script>
+                    var Clock = setInterval(date, 1000);
+                    function date() {
+                        var curDay = new Date();
+                        document.getElementById("DayRemain").innerHTML = 90 - curDay.getDate();
+                    }
+                </script>
+                <div class="p5">
+                    <span>ngày</span>
+                </div>
+            </div>
+            <div class="d2 gio">
+                <div class="p4">
+                    <span id="HourRemain"></span>
+                </div>
+                <script>
+                    var Clock = setInterval(date, 1000);
+                    function date() {
+                        var curHour = new Date();
+                        document.getElementById("HourRemain").innerHTML = 24 - curHour.getHours();
+                    }
+                </script>
+                <div class="p5">
+                    <span>giờ</span>
+                </div>
+            </div>
+            <div class="d2">
+                <div class="p4">
+                    <span id="MinutesRemain">99</span>
+                </div>
+                <script>
+                    var Clock = setInterval(date, 1000);
+                    function date() {
+                        var curMinutes = new Date();
+                        document.getElementById("MinutesRemain").innerHTML = 60 - curMinutes.getMinutes();
+                    }
+                </script>
+                <div class="p5">
+                    <span>phút</span>
+                </div>
+            </div>
+            <div class="d2">
+                <div class="p4">
+                    <span id="SecondsRemain"></span>
+                </div>
+                <script>
+                    var Clock = setInterval(date, 1);
+                    function date() {
+                        var curSecond = new Date();
+                        document.getElementById("SecondsRemain").innerHTML = 60 - curSecond.getSeconds();
+                    }
+                </script>
+                <div class="p5">
+                    <span>giây</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

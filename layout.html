@@ -1,0 +1,255 @@
+﻿
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <link href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Test by mymywas</title>
+    <style>
+        body {
+            min-height: 1200px;
+            min-width: 1200px;
+            background-attachment: fixed;
+            box-sizing: border-box;
+        }
+
+        div.background {
+            background: url(./img/nuoc.jpg);
+            width: 1500px;
+            height: 1500px;
+            position: fixed;
+            opacity: 0.87;
+        }
+
+        .logo {
+            margin-top: 240px;
+            margin-left: 100px;
+            position: fixed;
+        }
+
+        .titleText {
+            border: 1px #EAC0FE double;
+            border-radius: 20px;
+            width: 550px;
+            text-align: center;
+            margin-left: 400px;
+            color: #e67e22;
+            -webkit-transition: 0.3s ease-out 0.1s;
+            -moz-transition: 0.3s ease-out 0.1s;
+            -o-transition: 0.3s ease-out 0.1s;
+            transition: 0.3s ease-out 0.1s;
+        }
+
+            .titleText:hover {
+                width: 650px;
+                font-size: 20px;
+                color: #F25D5A;
+                margin-left: 350px;
+            }
+
+        .confuse {
+            border: 5px #E4F494 double;
+            text-align: center;
+            color: #F2F0E1;
+            font-size: 42px;
+            width: 600px;
+            border-radius: 20px;
+            margin-left: 590px;
+            margin-top: 140px;
+            font-family: myFirstFont;
+            float: right;
+            position: fixed;
+        }
+
+        .form-control {
+            background-color: rgba(0, 0, 0, 0);
+            text-align: left;
+            color: #B9E0F2;
+            font-size: 15px;
+            position: fixed;
+            -webkit-transition: 0.3s ease-out 0.1s;
+            -moz-transition: 0.3s ease-out 0.1s;
+            -o-transition: 0.3s ease-out 0.1s;
+            transition: 0.3s ease-out 0.1s;
+        }
+
+            .form-control:focus {
+                border-color: #009FAD;
+            }
+
+        .dataFake {
+            margin-top: 259px;
+            margin-left: 648px;
+            width: 470px;
+            text-align: center;
+            color: #262114;
+            font-size: 25px;
+            position: fixed;
+            font-family: my3Font;
+            font-weight: bold;
+        }
+
+        .hinh {
+            width: 435px;
+            height: 300px;
+        }
+
+        .pass {
+            width: 450px;
+            border: 5px #DBE9F3 double;
+            text-align: center;
+            color: #B9E0F2;
+            font-size: 50px;
+            border-radius: 3px;
+            margin-left: 450px;
+            margin-top: 10px;
+            padding-bottom: 11px;
+            font-family: my2Font;
+            -webkit-transition: 0.3s ease-out 0.1s;
+            -moz-transition: 0.3s ease-out 0.1s;
+            -o-transition: 0.3s ease-out 0.1s;
+            transition: 0.3s ease-out 0.1s;
+        }
+
+            .pass:hover {
+                color: #E0514B;
+                width: 400px;
+                font-size: 60px;
+                margin-left: 472px;
+            }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url("./front/QuinchoScript_PersonalUse.ttf");
+        }
+
+        @font-face {
+            font-family: my2Font;
+            src: url("./front/Choko.otf");
+        }
+
+        @font-face {
+            font-family: my3Font;
+            src: url("./front/victoria-serif.ttf");
+        }
+
+        input::-webkit-input-placeholder {
+            color: #B9E0F2 !important;
+        }
+
+        input::-moz-placeholder { /* Firefox 18- */
+            color: #B9E0F2 !important;
+        }
+
+        input:-moz-placeholder { /* Firefox 19+ */
+            color: #B9E0F2 !important;
+        }
+
+        input:-ms-input-placeholder {
+            color: #B9E0F2 !important;
+        }
+
+        .otron {
+            border: 2px #E4F494 double;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-top: 280px;
+            margin-left: 420px;
+            position: fixed;
+        }
+
+            .otron.so2 {
+                width: 15px;
+                height: 15px;
+                margin-top: 263px;
+                margin-left: 431px;
+            }
+
+            .otron.so3 {
+                width: 20px;
+                height: 20px;
+                margin-top: 239px;
+                margin-left: 447px;
+            }
+
+            .otron.so4 {
+                width: 25px;
+                height: 25px;
+                margin-top: 210px;
+                margin-left: 467px;
+            }
+
+            .otron.so5 {
+                width: 30px;
+                height: 30px;
+                margin-top: 185px;
+                margin-left: 498px;
+            }
+
+            .otron.so6 {
+                width: 32px;
+                height: 32px;
+                margin-top: 172px;
+                margin-left: 539px;
+            }
+
+        .khungnhap {
+            margin-top: 220px;
+            margin-left: 710px;
+            width: 700px;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .btn.btn-default {
+            background-color: rgba(0, 0, 0, 0);
+            color: #B9E0F2;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .khungnhap {
+                width: 340px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="background">
+        </div>
+        <div>
+            <div class="otron"></div>
+            <div class="otron so2"></div>
+            <div class="otron so3"></div>
+            <div class="otron so4"></div>
+            <div class="otron so5"></div>
+            <div class="otron so6"></div>
+        </div>
+        <div class="confuse">
+            What are you confusing about?
+        </div>
+        <div class="logo">
+            <img src="./img/frog.png" class="hinh">
+        </div>
+        <div class="khungnhap">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="input" onkeypress="getObjects()" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" onclick="getObjects()">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="dataFake">
+            <div id="kq">
+
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Test by mymywas</title>
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="./lib/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="lib/Swiper-master/dist/js/css/swiper.min.css">
+    <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.leanModal.min.js"></script>
+    <style>
+        #loginform label {
+            display: block;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #7c8291;
+            margin-bottom: 3px;
+        }
+
+        /** modal window styles **/
+        #lean_overlay {
+            position: fixed;
+            z-index: 100;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            display: none;
+        }
+
+        #loginmodal {
+            width: 300px;
+            padding: 15px 20px;
+            background: #f3f6fa;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .txtfield {
+            display: block;
+            width: 100%;
+            padding: 6px 5px;
+            margin-bottom: 15px;
+            font-family: 'Helvetica Neue', Helvetica, Verdana, sans-serif;
+            color: #7988a3;
+            font-size: 1.4em;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+            background-color: #fff;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#edf3f9), to(#fff));
+            background-image: -webkit-linear-gradient(top, #edf3f9, #fff);
+            background-image: -moz-linear-gradient(top, #edf3f9, #fff);
+            background-image: -ms-linear-gradient(top, #edf3f9, #fff);
+            background-image: -o-linear-gradient(top, #edf3f9, #fff);
+            background-image: linear-gradient(top, #edf3f9, #fff);
+            border: 1px solid;
+            border-color: #abbce8 #c3cae0 #b9c8ef;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.4);
+            -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.4);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.4);
+            -webkit-transition: all 0.25s linear;
+            -moz-transition: all 0.25s linear;
+            transition: all 0.25s linear;
+        }
+
+            .txtfield:focus {
+                outline: none;
+                color: #525864;
+                border-color: #84c0ee;
+                -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 7px #96c7ec;
+                -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 7px #96c7ec;
+                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 7px #96c7ec;
+            }
+
+        .glyphicon {
+            top: 0px;
+        }
+
+        .form-control {
+            border-radius: 0px;
+        }
+
+        .search-form .form-group {
+            float: right !important;
+            transition: all 0.35s, border-radius 0s;
+            width: 32px;
+            height: 32px;
+            background-color: #fff;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+        }
+
+            .search-form .form-group input.form-control {
+                padding-right: 20px;
+                border: 0 none;
+                background: transparent;
+                box-shadow: none;
+                display: block;
+            }
+
+                .search-form .form-group input.form-control::-webkit-input-placeholder {
+                    display: none;
+                }
+
+                .search-form .form-group input.form-control:-moz-placeholder {
+                    /* Firefox 18- */
+                    display: none;
+                }
+
+                .search-form .form-group input.form-control::-moz-placeholder {
+                    /* Firefox 19+ */
+                    display: none;
+                }
+
+                .search-form .form-group input.form-control:-ms-input-placeholder {
+                    display: none;
+                }
+
+            .search-form .form-group:hover,
+            .search-form .form-group.hover {
+                width: 100%;
+                border-radius: 4px 25px 25px 4px;
+            }
+
+            .search-form .form-group span.form-control-feedback {
+                position: absolute;
+                top: -1px;
+                right: -2px;
+                z-index: 2;
+                display: block;
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                color: #3596e0;
+                left: initial;
+                font-size: 14px;
+            }
+
+        body {
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        .logo {
+            width: 80%;
+        }
+
+        .sologan {
+            font-family: circle;
+            font-size: 100%;
+            font-weight: bold;
+            color: #800000;
+            margin-top: 3%;
+        }
+
+        .cu {
+            padding-left: 8%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .header {
+            margin-top: 2%;
+            padding-left: 12%;
+        }
+
+        .autorun {
+            color: #444;
+            font-size: 20px;
+            width: 300px;
+            margin: auto;
+            background: #ECFFD7;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            border-radius: 3px;
+        }
+
+        .run {
+            font-family: arrusb;
+            color: #7F0000;
+            font-style: oblique;
+        }
+
+        .slide {
+            box-shadow: 2px 2px 6px 3px #A3A4A6;
+        }
+
+        .theloai {
+            font-family: QuinchoScript_PersonalUse;
+            font-size: 180%;
+            background: #D9D9D9;
+            color: #800000;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .sach {
+            width: 90%;
+        }
+
+        .row {
+            margin-bottom: 5%;
+        }
+
+        .tamgiac {
+            border-top: 18px solid transparent;
+            border-left: 40px solid #D9D9D9;
+            border-bottom: 17.5px solid transparent;
+        }
+
+        .active {
+            margin-top: 6%;
+        }
+
+        button {
+            margin-left: 25%;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px #2BD9D9 double;
+            border-radius: 5px;
+        }
+
+        .dangnhap {
+            margin-top: 6.5%;
+            font-weight: bold;
+            font-family: DJB Drives Me Dotty;
+        }
+
+        .hidemodal {
+            background: rgba(0,0,0,0);
+            border: 1px #2372B9 solid;
+            color: #2372B9;
+            border-radius: 5px;
+            font-family: Texas Woman Demo;
+            font-weight: bold;
+        }
+
+        label {
+            font-family: Texas Woman Demo;
+        }
+
+        h1 {
+            font-family: circle;
+        }
+
+        .cart1 {
+            width: 16%;
+        }
+
+        #hover-preview-imgpreview {
+            background: #222 url(/sites/all/modules/hover_preview/loading.gif) no-repeat center;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 999;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-lg-12 cu">
+                    <div class="col-lg-2"><img class="logo" src="./img/cu.png"></div>
+                    <div class="col-lg-6 sologan">Bởi vì mỗi quyển sách là một thế giới mới.</div>
+                    <div class="col-md-6">
+                        <form action="" class="search-form">
+                            <div class="form-group has-feedback">
+                                <label for="search" class="sr-only">Search</label>
+                                <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="dangnhap">
+                            <a href="#loginmodal" id="modaltrigger">Login</a>
+                        </div>
+                        <div id="loginmodal" style="display:none;">
+                            <h1>User Login</h1>
+                            <form id="loginform" name="loginform" method="post" action="index.html">
+                                <label for="username">Username:</label>
+                                <input type="text" name="username" id="username" class="txtfield" tabindex="1">
+                                <label for="password">Password:</label>
+                                <input type="password" name="password" id="password" class="txtfield" tabindex="2">
+                                <div><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Log In" tabindex="3"></div>
+                            </form>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#loginform').submit(function (e) {
+                                    return false;
+                                });
+
+                                $('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
+                            });
+                        </script>
+                    </div>
+                    <img class="cart1" src="./img/Cart.png">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="swiper-container slide">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide "><img src="./img/banner_1.jpg"></div>
+                    <div class="swiper-slide "><img src="./img/banner_2.jpg"></div>
+                    <div class="swiper-slide "><img src="./img/banner_03.jpg"></div>
+                    <div class="swiper-slide "><img src="./img/banner04.jpg"></div>
+                    <div class="swiper-slide "><img src="./img/banner_05.jpg"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+            </div>
+            <!-- Swiper JS -->
+            <script src="./lib/Swiper-master/dist/js/swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    spaceBetween: 30
+                });
+            </script>
+        </div>
+        <div class="autorun">
+            <marquee direction="left">
+                <style>
+                    :host {
+                        display: inline-block;
+                        width: -webkit-fill-available;
+                        overflow: hidden;
+                        text-align: initial;
+                        white-space: nowrap;
+                    }
+
+                    :host([direction="up"]),
+                    :host([direction="down"]) {
+                        overflow: initial;
+                        overflow-y: hidden;
+                        white-space: initial;
+                    }
+                </style>
+                <div class="run">Đọc một cuốn sách giống như đang trải nghiệm một cuộc sống mới, một thế giới mới vậy. Sẽ là một chuyến đi đầy thú vị cùng với những trải nghiệm mới.</div>
+            </marquee>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 theloai">Văn học Việt Nam</div>
+                <div class="col-lg-2 tamgiac"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"><img data-hover-preview="http://nhanam.vn/sites/default/files/life_navigator_5_-_nguoi_tinh_cua_ca_the_gian-01.jpg" class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 theloai">Văn học Nước ngoài</div>
+                <div class="col-lg-3 tamgiac"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+                <div class="col-lg-4"><img class="sach" src="./img/sach.png"><br><button>Add to Cart</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

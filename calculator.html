@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test by mymywas</title>
+        <!--<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">-->
+        <style>
+            body{
+                width: 263px;
+                height: 415px;
+                border: 4px black solid;
+                box-sizing: border-box;
+                padding-top: 18.5px;
+                padding-left: 16px;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4), 0px 6px 20px 0px rgba(0, 0, 0, 0.9);
+            }
+            button{
+                background: rgba(0,0,0,0);
+                width: 71.8px;
+                height: 42px;
+                margin-top: 10px;
+                box-sizing: border-box;
+                font-weight: bold;
+                font-size: 30px;
+                border-color: #059FF5;
+                border-width: 0.5px;
+                transition: all 0.1s ease-out 0.1s;
+            }
+            button:hover{
+                background: #046FB4;
+                color: white;
+                cursor: pointer;
+            }
+            button:focus{
+                background: #FCACA0;
+                color: white;
+                cursor: pointer;
+            }
+            .btnBang{
+                width: 147.5px;
+                background: #1595A3;
+                color: white;
+            }
+            .output{
+                width: 223px;
+                height: 60px;
+                border: 1px #059FF5 double;
+                font-weight: bold;
+                font-size: 25px;
+                padding-left: 5px;
+                float: left;
+                box-sizing: border-box;
+            }
+            .btnXoa{
+                background:  #FF254A;
+                color: white;
+                transition: all 0.1s ease-out 0.1s;
+            }
+            .btnXoa:hover{
+                background: #046FB4;
+                color: white;
+                cursor: pointer;
+            }
+            .tinh{
+                background: #47BC87;
+                color: white;
+            }
+            .ketqua{
+                float: right;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <div class="output" >
+                <div id="Output">0</div>
+                <div class="ketqua" id="ketqua"></div>
+            </div>
+
+            <div>
+                <button onclick="nhangiatri('1')">1</button>
+                <button onclick="nhangiatri('2')">2</button>
+                <button onclick="nhangiatri('3')">3</button>
+            </div>
+            <div>
+                <button onclick="nhangiatri('4')">4</button>
+                <button onclick="nhangiatri('5')">5</button>
+                <button onclick="nhangiatri('6')">6</button>
+            </div>
+            <div>
+                <button onclick="nhangiatri('7')">7</button>
+                <button onclick="nhangiatri('8')">8</button>
+                <button onclick="nhangiatri('9')">9</button>
+            </div>
+            <div>
+                <button onclick="nhangiatri('0')">0</button>
+                <button onclick="nhangiatri('.')">.</button>
+                <button class="tinh" onclick="nhangiatri('+')">+</button>
+            </div>
+            <div>
+                <button class="tinh" onclick="nhangiatri('-')">-</button>
+                <button class="tinh" onclick="nhangiatri('*')">*</button>
+                <button class="tinh" onclick="nhangiatri('/')">/</button>
+            </div>
+            <div>
+                <button class="btnBang" onclick="nhangiatri('=')">=</button>
+                <button class="btnXoa" onclick="xoa()">C</button>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    var input = "";
+    var result = 0.0;
+    function nhangiatri(x) {
+
+        if (x === "=") {
+            result = tinhtoan();
+            xuatketqa(result);
+        }
+        else {
+            input += x;
+            hienthi(input);
+        }
+
+    }
+    function tinhtoan() {
+        return new Function('return ' + input)();
+    }
+    function xoa() {
+        input = "";
+        document.getElementById("Output").innerHTML = input;
+        result = 0;
+        document.getElementById("ketqua").innerHTML = result;
+    }
+    function hienthi(y) {
+        var hienthi = "";
+        hienthi = hienthi + y;
+        document.getElementById("Output").innerHTML = hienthi;
+    }
+    function xuatketqa(z) {
+        var ketqua = 0.0;
+        ketqua = z;
+        document.getElementById("ketqua").innerHTML = ketqua;
+
+    }
+</script>
