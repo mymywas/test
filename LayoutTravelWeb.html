@@ -142,15 +142,83 @@
                 <!--content-->
                 <div class="bodyContent">
                     <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="myRegion">
                                 Bài viết nổi bật
                             </div>
+                            <div class="arrowDown">
+                               
+                            </div>
+                            <div class="arrowDownInner">
+
+                            </div>
+                            <div class="HotBlog">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="block">
+                                            <div class="ratio-wrapper ratio-wrapper-16-9">
+                                                <div class="ratio-item">
+                                                    <a><img onclick="onClick(this)" src="./img/IMG_8452.JPG" class="img-responsive myIMGBlog" /></a>
+                                                    <a href="blog.html" class="myTitleBlog">Phượt đêm Sài Gòn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="block">
+                                            <div class="ratio-wrapper ratio-wrapper-16-9">
+                                                <div class="ratio-item">
+                                                    <a><img onclick="onClick(this)" src="./img/IMG_2079.JPG" class="img-responsive myIMGBlog" /></a>
+                                                    <a href="blog.html" class="myTitleBlog">Ninh Bình - Nắng cháy da</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="block">
+                                            <div class="ratio-wrapper ratio-wrapper-16-9">
+                                                <div class="ratio-item">
+                                                    <a><img onclick="onClick(this)" src="./img/IMG_1267.JPG" class="img-responsive myIMGBlog" /></a>
+                                                    <a href="blog.html" class="myTitleBlog">Fansipan - Sống còn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="block">
+                                            <div class="ratio-wrapper ratio-wrapper-16-9">
+                                                <div class="ratio-item">
+                                                    <a><img onclick="onClick(this)" src="./img/IMG_1777.jpg" class="img-responsive myIMGBlog" /></a>
+                                                    <a href="blog.html" class="myTitleBlog">Núi Bà Đen - Bò lên "ĐỈNH"</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="block">
+                                            <div class="ratio-wrapper ratio-wrapper-16-9">
+                                                <div class="ratio-item">
+                                                    <a> <img onclick="onClick(this)" src="./img/IMG_0111.JPG" class="img-responsive myIMGBlog" /></a>
+                                                    <a href="blog.html" class="myTitleBlog">Hồ Tràm - Hành trình tìm biển sạch</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="block">
+                                            <div class="ratio-wrapper ratio-wrapper-16-9">
+                                                <div class="ratio-item">
+                                                    <a><img onclick="onClick(this)" src="./img/IMG_6466.JPG" class="img-responsive myIMGBlog" /></a>
+                                                    <a href="blog.html" class="myTitleBlog">Đà Nẵng - Chốn bình yên</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3"></div>
                     </div>
-                    <div id="MyBlog" class="blog">
+                    <!--<div id="MyBlog" class="blog">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="block">
@@ -213,7 +281,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -243,11 +311,6 @@
             }
         </script>
     </div>
-    <!--<script type="text/javascript">
-        $.apScrollTop().on('apstScrolledTo', function (evt, details) {
-            console.log('apScrollTop: scrolledTo / position: ' + details.position);
-        });
-    </script>-->
     <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
@@ -261,36 +324,6 @@
         });
     </script>
     <script>
-        //if ($(window).width() < 1200) {
-        //    var swiper = document.getElementById("SliderIndex").offsetHeight;
-        //    var ToSocial = document.getElementById("connectToSocial").offsetHeight;
-        //    var search = document.getElementById("boxSearch").offsetHeight;
-        //    temp = swiper - (search + ToSocial);
-        //    about = document.getElementById("Aboutus").offsetHeight;
-        //    console.log(temp);
-        //    console.log(about);
-        //    if (temp < about) {
-        //        document.getElementById("Aboutus").style.fontSize = '160%';
-        //    }
-        //}
-        //var temp = 0;
-        //var about = 0;
-        //var font = document.getElementById("Aboutus").style.fontSize;
-        //console.log(font);
-        //do {
-        //    var swiper = document.getElementById("SliderIndex").offsetHeight;
-        //    var ToSocial = document.getElementById("connectToSocial").offsetHeight;
-        //    var search = document.getElementById("boxSearch").offsetHeight;
-        //    temp = swiper - (search + ToSocial);
-        //    about = document.getElementById("Aboutus").offsetHeight;
-        //    document.getElementById("Aboutus").style.fontSize = - '10%';
-        //    font = font - 10;
-        //    console.log(temp);
-        //    console.log(about);
-        //}
-        //while (temp >= about);
-        //document.getElementById("Aboutus").style.fontSize = font+'%';
-        //document.getElementById("Aboutus").style.height = temp+'px';
     </script>
 </body>
 </html>

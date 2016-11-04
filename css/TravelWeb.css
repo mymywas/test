@@ -518,22 +518,19 @@ a:focus, a:hover, a:active {
 
 .myTitleBlog {
     position: absolute;
-    bottom: 5%;
-    left: 32%;
-    right: 30%;
-    /*position: absolute;
-    padding: 15px;
-    font-size: 170%;
-    top: 35%;
-    text-align: center;
-    background: rgba(255,255,255,0.4);
-    left: 0%;*/
+    right: 0;
+    bottom: 15%;
+    background: rgba(255,255,255,0.5);
+    padding: 7px 10px;
+    font-weight: 500;
+    max-width: 100%;
 }
 
 .block {
     background-color: white;
     color: #636769;
     padding: 0;
+    margin-bottom: 25px;
     /*box-shadow: 0px 0px 5px 2px #bdc3c7;*/
 }
 
@@ -543,10 +540,6 @@ a:focus, a:hover, a:active {
     }
 
     .block span {
-        color: rgba(255,255,255,0);
-    }
-
-    .block .myTitleBlog {
         color: rgba(255,255,255,0);
     }
 
@@ -566,7 +559,8 @@ a:focus, a:hover, a:active {
         }
 
         .block:hover a {
-            color: white;
+            color: #678EC9;
+            background: white;
             transition-duration: 0.2s;
             cursor: pointer;
         }
@@ -576,9 +570,7 @@ a:focus, a:hover, a:active {
             transition-duration: 0.2s;
         }
 
-        .block:hover .myTitleBlog {
-            color: rgba(255,255,255,1);
-        }
+
 
 .BlockContent {
     padding-left: 15px;
@@ -996,7 +988,7 @@ a:focus, a:hover, a:active {
 }
 
 #blog a:hover {
-    font-size: 108%;
+    /*font-size: 108%;*/
 }
 
 .MesSwiper-container .swiper-slide {
@@ -1028,4 +1020,36 @@ a:focus, a:hover, a:active {
 
 .author {
     margin-bottom: 10px;
+}
+
+.arrowDown {
+    height: 40px;
+    width: 40px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 49%;
+    top: 52px;
+    z-index: 100;
+}
+
+.arrowDownInner {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-top-color: white;
+    border-width: 23px 23px;
+}
+
+.HotBlog {
+    background: rgba(0,0,0,0.5);
+    padding: 50px 20px 25px 20px;
 }
