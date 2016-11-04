@@ -988,7 +988,7 @@ a:focus, a:hover, a:active {
 }
 
 #blog a:hover {
-    font-size: 100%;
+    /*font-size: 108%;*/
 }
 
 .MesSwiper-container .swiper-slide {
